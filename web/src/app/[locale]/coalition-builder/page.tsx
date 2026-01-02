@@ -5,8 +5,9 @@ import CoalitionMathEngine from '@/components/coalition/CoalitionMathEngine';
 import TransparencyDashboard from '@/components/coalition/TransparencyDashboard';
 import PolicyMatrix from '@/components/coalition/PolicyMatrix';
 import CitizenEngagement from '@/components/coalition/CitizenEngagement';
+import NetworkGraph from '@/components/coalition/NetworkGraph';
 
-type TabType = 'math' | 'transparency' | 'policy' | 'citizen';
+type TabType = 'math' | 'transparency' | 'policy' | 'network' | 'citizen';
 
 export default function CoalitionBuilderPage() {
   const [activeTab, setActiveTab] = useState<TabType>('math');
@@ -15,6 +16,7 @@ export default function CoalitionBuilderPage() {
     { key: 'math', label: 'Coalition Mathematics', icon: '🔢' },
     { key: 'transparency', label: 'Transparency Dashboard', icon: '📊' },
     { key: 'policy', label: 'Policy Matrix', icon: '🎯' },
+    { key: 'network', label: 'Network Graph', icon: '🕸️' },
     { key: 'citizen', label: 'Citizen Engagement', icon: '👥' },
   ];
 
@@ -63,6 +65,7 @@ export default function CoalitionBuilderPage() {
         {activeTab === 'math' && <CoalitionMathEngine />}
         {activeTab === 'transparency' && <TransparencyDashboard />}
         {activeTab === 'policy' && <PolicyMatrix />}
+        {activeTab === 'network' && <NetworkGraph />}
         {activeTab === 'citizen' && <CitizenEngagement />}
       </div>
 

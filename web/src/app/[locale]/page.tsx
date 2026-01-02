@@ -4,11 +4,6 @@ import { Link } from '@/i18n/routing';
 export default function HomePage() {
   const t = useTranslations('home');
 
-  // Calculate days since June 9, 2024 (Brussels elections)
-  const electionDate = new Date('2024-06-09');
-  const today = new Date();
-  const daysWithoutGov = Math.floor((today.getTime() - electionDate.getTime()) / (1000 * 60 * 60 * 24));
-
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -19,22 +14,9 @@ export default function HomePage() {
             <h1 className="text-6xl md:text-8xl font-display font-bold mb-6 text-white">
               {t('hero')}
             </h1>
-            <p className="text-2xl md:text-3xl text-gray-300 mb-8 font-light">
+            <p className="text-2xl md:text-3xl text-gray-300 mb-12 font-light">
               {t('subtitle')}
             </p>
-
-            {/* Stats Counter */}
-            <div className="bg-background-darker border-2 border-brand-danger p-8 rounded-none mb-12 inline-block">
-              <div className="text-brand-warning text-6xl md:text-8xl font-display font-bold">
-                {daysWithoutGov}
-              </div>
-              <div className="text-xl md:text-2xl text-gray-400 mt-2">
-                {t('daysWithoutGov')}
-              </div>
-              <div className="text-sm text-gray-500 mt-1">
-                Brussels-Capital Region
-              </div>
-            </div>
 
             {/* CTA Button */}
             <div>

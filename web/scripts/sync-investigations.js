@@ -16,6 +16,7 @@ async function syncInvestigations() {
     // Check if source directory exists
     if (!await fs.pathExists(SOURCE_DIR)) {
       console.warn('⚠️  Source investigations directory does not exist');
+      console.log('ℹ️  Using existing synced data in src/data/investigations/');
       return;
     }
 
