@@ -6,14 +6,16 @@ import TransparencyDashboard from '@/components/coalition/TransparencyDashboard'
 import PolicyMatrix from '@/components/coalition/PolicyMatrix';
 import CitizenEngagement from '@/components/coalition/CitizenEngagement';
 import NetworkGraph from '@/components/coalition/NetworkGraph';
+import PolicyDistanceCalculator from '@/components/coalition/PolicyDistanceCalculator';
 
-type TabType = 'math' | 'transparency' | 'policy' | 'network' | 'citizen';
+type TabType = 'math' | 'transparency' | 'policy' | 'network' | 'citizen' | 'ai-policy';
 
 export default function CoalitionBuilderPage() {
   const [activeTab, setActiveTab] = useState<TabType>('math');
 
   const tabs: { key: TabType; label: string; icon: string }[] = [
     { key: 'math', label: 'Coalition Mathematics', icon: '🔢' },
+    { key: 'ai-policy', label: 'AI Policy Calculator', icon: '🤖' },
     { key: 'transparency', label: 'Transparency Dashboard', icon: '📊' },
     { key: 'policy', label: 'Policy Matrix', icon: '🎯' },
     { key: 'network', label: 'Network Graph', icon: '🕸️' },
@@ -63,6 +65,7 @@ export default function CoalitionBuilderPage() {
       {/* Tab Content */}
       <div className="min-h-[800px]">
         {activeTab === 'math' && <CoalitionMathEngine />}
+        {activeTab === 'ai-policy' && <PolicyDistanceCalculator />}
         {activeTab === 'transparency' && <TransparencyDashboard />}
         {activeTab === 'policy' && <PolicyMatrix />}
         {activeTab === 'network' && <NetworkGraph />}
