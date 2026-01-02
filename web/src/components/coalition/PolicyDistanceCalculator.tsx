@@ -58,7 +58,7 @@ export default function PolicyDistanceCalculator() {
       let totalDistance = 0;
       let pairCount = 0;
       let maxDistance = 0;
-      let positions: number[] = [];
+      const positions: number[] = [];
 
       // Get all positions for this topic
       selectedParties.forEach(partyId => {
@@ -309,7 +309,7 @@ export default function PolicyDistanceCalculator() {
                 <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gray-500" />
 
                 {/* Party positions */}
-                {topicPositions.map((pos, i) => {
+                {topicPositions.map((pos) => {
                   const leftPercent = ((pos.position! + 10) / 20) * 100;
                   return (
                     <div

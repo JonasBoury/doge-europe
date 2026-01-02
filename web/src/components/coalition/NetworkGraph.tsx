@@ -13,7 +13,7 @@ import ReactFlow, {
   Position,
 } from 'reactflow';
 import 'reactflow/dist/style.css';
-import { parties, vetoes } from '@/data/brussels-2024-election';
+import { parties } from '@/data/brussels-2024-election';
 
 // Network data based on investigation notes.md network analysis
 const networkRelationships = [
@@ -178,8 +178,8 @@ export default function NetworkGraph() {
     });
   }, []);
 
-  const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
-  const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
+  const [nodes, , onNodesChange] = useNodesState(initialNodes);
+  const [edges, , onEdgesChange] = useEdgesState(initialEdges);
 
   const onConnect = useCallback(() => {
     // Disabled - static network
