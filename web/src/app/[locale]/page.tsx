@@ -11,12 +11,9 @@ export default function HomePage() {
         <div className="absolute inset-0 gradient-doge opacity-10"></div>
         <div className="container mx-auto relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-6xl md:text-8xl font-display font-bold mb-6 text-white">
+            <h1 className="text-6xl md:text-8xl font-display font-bold mb-12 text-white">
               {t('hero')}
             </h1>
-            <p className="text-2xl md:text-3xl text-gray-300 mb-12 font-light">
-              {t('subtitle')}
-            </p>
 
             {/* CTA Button */}
             <div>
