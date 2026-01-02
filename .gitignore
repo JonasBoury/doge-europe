@@ -1,0 +1,33 @@
+# Investigations (sensitive data)
+investigations/*/documents/
+investigations/*/financial/
+
+# Web App
+web/node_modules/
+web/.next/
+web/out/
+web/.env*.local
+web/.vercel
+web/src/data/investigations/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Temp
+.tmp/
+temp/

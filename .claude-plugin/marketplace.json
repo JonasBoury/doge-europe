@@ -1,0 +1,49 @@
+{
+  "name": "DOGE Europe",
+  "displayName": "DOGE Europe - Belgian Political Research",
+  "description": "AI-powered research assistant for uncovering fraud, corruption, and scams in Belgian politics",
+  "version": "1.0.0",
+  "author": "DOGE Europe Project",
+  "license": "MIT",
+  "tags": [
+    "investigative-journalism",
+    "political-research",
+    "belgium",
+    "fraud-detection",
+    "corruption",
+    "osint",
+    "fact-checking",
+    "transparency"
+  ],
+  "category": "research",
+  "features": [
+    "7 specialized investigation agents",
+    "Belgian political knowledge base",
+    "Investigative journalism methodologies",
+    "4 investigation workflow modes",
+    "OSINT techniques and tools",
+    "Source verification and fact-checking",
+    "Network mapping and relationship analysis",
+    "Financial tracking and forensics",
+    "Media monitoring and bias detection"
+  ],
+  "requirements": {
+    "claudeCode": ">=1.0.33",
+    "python": ">=3.8"
+  },
+  "documentation": "README.md",
+  "ethics": "ETHICS.md",
+  "homepage": "https://github.com/yourusername/doge-europe",
+  "keywords": [
+    "belgium",
+    "political corruption",
+    "investigative journalism",
+    "fraud detection",
+    "transparency",
+    "accountability",
+    "OSINT",
+    "fact-checking",
+    "network analysis",
+    "financial forensics"
+  ]
+}

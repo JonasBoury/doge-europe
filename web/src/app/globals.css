@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', system-ui, sans-serif;
+    --font-space-grotesk: 'Space Grotesk', sans-serif;
+    --font-jetbrains-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    @apply bg-background-dark text-white antialiased;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-doge {
+    background: linear-gradient(135deg, #FF6B00 0%, #FF0054 100%);
+  }
+
+  .gradient-accent {
+    background: linear-gradient(135deg, #00D9FF 0%, #FF6B00 100%);
+  }
+}

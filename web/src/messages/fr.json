@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "investigations": "Enquêtes",
+    "coalitionBuilder": "Outil Coalition",
+    "about": "À propos de DOGE Europe"
+  },
+  "investigation": {
+    "status": {
+      "active": "Enquête Active",
+      "completed": "Terminée",
+      "pending": "En Attente"
+    },
+    "priority": {
+      "high": "Priorité Élevée",
+      "medium": "Priorité Moyenne",
+      "low": "Priorité Faible"
+    },
+    "tabs": {
+      "overview": "Aperçu",
+      "timeline": "Chronologie",
+      "network": "Réseau",
+      "sources": "Sources"
+    }
+  },
+  "home": {
+    "hero": "Dénoncer l'Inefficacité Gouvernementale",
+    "subtitle": "Département Européen de l'Efficacité Gouvernementale",
+    "cta": "Voir les Enquêtes Actives",
+    "daysWithoutGov": "Jours Sans Gouvernement"
+  }
+}

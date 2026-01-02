@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "home": "Home",
+    "investigations": "Investigations",
+    "coalitionBuilder": "Coalition Builder",
+    "about": "About DOGE Europe"
+  },
+  "investigation": {
+    "status": {
+      "active": "Active Investigation",
+      "completed": "Completed",
+      "pending": "Pending"
+    },
+    "priority": {
+      "high": "High Priority",
+      "medium": "Medium Priority",
+      "low": "Low Priority"
+    },
+    "tabs": {
+      "overview": "Overview",
+      "timeline": "Timeline",
+      "network": "Network",
+      "sources": "Sources"
+    }
+  },
+  "home": {
+    "hero": "Exposing Government Inefficiency",
+    "subtitle": "European Department of Government Efficiency",
+    "cta": "View Active Investigations",
+    "daysWithoutGov": "Days Without Government"
+  }
+}

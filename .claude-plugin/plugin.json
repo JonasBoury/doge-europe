@@ -1,0 +1,42 @@
+{
+  "name": "doge-europe",
+  "version": "1.0.0",
+  "description": "Belgian political fraud and corruption research assistant",
+  "author": "DOGE Europe Project",
+  "agents": [
+    "agents/fraud-investigator.md",
+    "agents/source-analyzer.md",
+    "agents/network-mapper.md",
+    "agents/document-researcher.md",
+    "agents/timeline-builder.md",
+    "agents/financial-tracker.md",
+    "agents/media-monitor.md"
+  ],
+  "skills": [
+    "skills/belgian-politics",
+    "skills/investigative-journalism"
+  ],
+  "commands": [
+    {
+      "name": "deep-dive",
+      "file": "commands/deep-dive.md",
+      "namespace": "doge"
+    },
+    {
+      "name": "rapid-check",
+      "file": "commands/rapid-check.md",
+      "namespace": "doge"
+    },
+    {
+      "name": "connect-dots",
+      "file": "commands/connect-dots.md",
+      "namespace": "doge"
+    },
+    {
+      "name": "follow-money",
+      "file": "commands/follow-money.md",
+      "namespace": "doge"
+    }
+  ],
+  "hooks": "hooks/hooks.json"
+}

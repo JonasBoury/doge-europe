@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "home": "Home",
+    "investigations": "Onderzoeken",
+    "coalitionBuilder": "Coalitie Tool",
+    "about": "Over DOGE Europa"
+  },
+  "investigation": {
+    "status": {
+      "active": "Actief Onderzoek",
+      "completed": "Voltooid",
+      "pending": "In Afwachting"
+    },
+    "priority": {
+      "high": "Hoge Prioriteit",
+      "medium": "Gemiddelde Prioriteit",
+      "low": "Lage Prioriteit"
+    },
+    "tabs": {
+      "overview": "Overzicht",
+      "timeline": "Tijdlijn",
+      "network": "Netwerk",
+      "sources": "Bronnen"
+    }
+  },
+  "home": {
+    "hero": "Onthulling van Overheidsinefficiëntie",
+    "subtitle": "Europees Departement voor Overheidsefficiëntie",
+    "cta": "Bekijk Actieve Onderzoeken",
+    "daysWithoutGov": "Dagen Zonder Regering"
+  }
+}

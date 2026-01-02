@@ -1,0 +1,8 @@
+# Ignore all investigation files (sensitive research data)
+*
+
+# But track the .gitignore file itself
+!.gitignore
+
+# And track the README
+!README.md
