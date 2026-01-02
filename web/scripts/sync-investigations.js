@@ -17,7 +17,8 @@ async function syncInvestigations() {
     if (!await fs.pathExists(SOURCE_DIR)) {
       console.warn('⚠️  Source investigations directory does not exist');
       console.log('ℹ️  Using existing synced data in src/data/investigations/');
-      return;
+      console.log('✅ Sync skipped - using pre-synced data');
+      process.exit(0); // Exit successfully - this is expected in Vercel builds
     }
 
     // Read source directory

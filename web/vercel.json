@@ -5,6 +5,13 @@
   "framework": "nextjs",
   "outputDirectory": ".next",
   "regions": ["iad1"],
+  "git": {
+    "deploymentEnabled": true
+  },
+  "github": {
+    "enabled": true,
+    "autoAlias": true
+  },
   "rewrites": [
     {
       "source": "/",
