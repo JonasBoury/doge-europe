@@ -3,27 +3,40 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --font-inter: 'Inter', system-ui, sans-serif;
-    --font-space-grotesk: 'Space Grotesk', sans-serif;
-    --font-jetbrains-mono: 'JetBrains Mono', monospace;
+  * {
+    @apply border-border;
   }
 
   body {
-    @apply bg-background-dark text-white antialiased;
+    @apply bg-background text-foreground antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-foreground;
+  }
+}
+
+@layer components {
+  .border-dashed-subtle {
+    border-style: dashed;
+    @apply border-muted;
+  }
+
+  .card {
+    @apply bg-card text-card-foreground rounded-lg border border-border;
+  }
+
+  .btn-primary {
+    @apply bg-accent text-accent-foreground px-4 py-2 rounded-md transition-colors hover:bg-accent/90;
+  }
+
+  .btn-secondary {
+    @apply bg-muted text-foreground px-4 py-2 rounded-md transition-colors hover:bg-muted/80;
   }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
-  }
-
-  .gradient-doge {
-    background: linear-gradient(135deg, #FF6B00 0%, #FF0054 100%);
-  }
-
-  .gradient-accent {
-    background: linear-gradient(135deg, #00D9FF 0%, #FF6B00 100%);
   }
 }

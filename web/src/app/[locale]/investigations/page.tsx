@@ -7,34 +7,34 @@ export default function InvestigationsPage() {
   const investigations = getAllInvestigations();
 
   return (
-    <div className="container mx-auto px-4 py-12">
-      <h1 className="text-5xl font-display font-bold mb-8 text-brand-primary">
+    <div className="max-w-6xl mx-auto px-4 md:px-6 py-20">
+      <h1 className="text-3xl md:text-4xl font-semibold mb-12 text-foreground">
         Active Investigations
       </h1>
 
       {/* Investigation Cards */}
       {investigations.length > 0 ? (
-        <>
+        <div className="space-y-6">
           {investigations.map((investigation) => (
             <div
               key={investigation.id}
-              className="border-2 border-brand-primary bg-background-darker p-8 mb-6 hover:border-brand-accent transition-colors"
+              className="card p-6 hover:border-accent/50 transition-colors"
             >
               <div className="flex items-start justify-between mb-4">
-                <div>
-                  <h2 className="text-3xl font-display font-bold mb-2">
+                <div className="space-y-2">
+                  <h2 className="text-xl font-semibold text-foreground">
                     {investigation.title}
                   </h2>
-                  <p className="text-gray-400 font-mono text-sm">{investigation.caseId}</p>
+                  <p className="text-sm text-foreground/50 font-mono">{investigation.caseId}</p>
                 </div>
-                <div className="flex flex-col items-end space-y-2">
+                <div className="flex flex-col items-end gap-2">
                   <span
-                    className={`px-4 py-1 text-sm font-bold ${
+                    className={`px-3 py-1 text-xs rounded ${
                       investigation.status === 'Active'
-                        ? 'bg-brand-danger text-black'
+                        ? 'bg-accent/20 text-accent'
                         : investigation.status === 'Completed'
-                        ? 'bg-brand-accent text-black'
-                        : 'bg-brand-warning text-black'
+                        ? 'bg-muted text-foreground/70'
+                        : 'bg-muted/50 text-foreground/50'
                     }`}
                   >
                     {investigation.status === 'Active' && t('status.active')}
@@ -42,12 +42,12 @@ export default function InvestigationsPage() {
                     {investigation.status === 'Pending' && t('status.pending')}
                   </span>
                   <span
-                    className={`px-4 py-1 text-sm font-bold ${
+                    className={`px-3 py-1 text-xs rounded ${
                       investigation.priority === 'High'
-                        ? 'bg-brand-warning text-black'
+                        ? 'bg-accent/20 text-accent'
                         : investigation.priority === 'Medium'
-                        ? 'bg-brand-accent text-black'
-                        : 'bg-gray-500 text-white'
+                        ? 'bg-muted text-foreground/70'
+                        : 'bg-muted/50 text-foreground/50'
                     }`}
                   >
                     {investigation.priority === 'High' && t('priority.high')}
@@ -57,38 +57,38 @@ export default function InvestigationsPage() {
                 </div>
               </div>
 
-              <p className="text-gray-300 mb-4 text-lg">
+              <p className="text-foreground/70 mb-6 leading-relaxed">
                 Investigation into systemic accountability failures and transparency gaps
                 in the Brussels-Capital Region government formation crisis.
               </p>
 
-              <div className="flex items-center justify-between">
-                <div className="text-sm text-gray-500">
+              <div className="flex items-center justify-between border-t border-dashed border-border/30 pt-4">
+                <div className="text-sm text-foreground/50">
                   Last Updated: {investigation.lastUpdated}
                 </div>
                 <Link
                   href={`/investigations/${investigation.id}`}
-                  className="bg-brand-primary hover:bg-brand-accent text-black font-bold px-6 py-2 transition-colors inline-block"
+                  className="btn-primary"
                 >
-                  View Investigation →
+                  View Investigation
                 </Link>
               </div>
             </div>
           ))}
 
           {/* Coming Soon */}
-          <div className="border-2 border-brand-secondary bg-background-darker p-8 opacity-50">
-            <h2 className="text-2xl font-display font-bold mb-2 text-gray-500">
+          <div className="card p-6 opacity-60">
+            <h2 className="text-lg font-semibold mb-2 text-foreground/70">
               More Investigations Coming Soon
             </h2>
-            <p className="text-gray-500">
+            <p className="text-sm text-foreground/50">
               DOGE Europe is expanding its investigative scope across European institutions.
             </p>
           </div>
-        </>
+        </div>
       ) : (
-        <div className="border-2 border-brand-secondary bg-background-darker p-8 mb-6">
-          <p className="text-gray-400">No investigations found. Run sync script to load data.</p>
+        <div className="card p-6">
+          <p className="text-foreground/50">No investigations found. Run sync script to load data.</p>
         </div>
       )}
     </div>

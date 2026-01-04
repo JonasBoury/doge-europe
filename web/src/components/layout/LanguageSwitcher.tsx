@@ -15,34 +15,34 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <div className="flex items-center space-x-1 bg-background-dark border border-brand-secondary rounded-sm p-1">
+    <div className="flex items-center gap-2">
       <button
         onClick={() => handleLocaleChange('fr')}
-        className={`px-3 py-1 text-sm font-mono ${
+        className={`px-2 py-1 text-xs rounded transition-colors ${
           currentLocale === 'fr'
-            ? 'bg-brand-primary text-black font-bold'
-            : 'text-gray-400 hover:text-white'
-        } transition-colors`}
+            ? 'bg-muted text-foreground'
+            : 'text-foreground/50 hover:text-foreground hover:bg-muted/50'
+        }`}
       >
         FR
       </button>
       <button
         onClick={() => handleLocaleChange('nl')}
-        className={`px-3 py-1 text-sm font-mono ${
+        className={`px-2 py-1 text-xs rounded transition-colors ${
           currentLocale === 'nl'
-            ? 'bg-brand-primary text-black font-bold'
-            : 'text-gray-400 hover:text-white'
-        } transition-colors`}
+            ? 'bg-muted text-foreground'
+            : 'text-foreground/50 hover:text-foreground hover:bg-muted/50'
+        }`}
       >
         NL
       </button>
       <button
         onClick={() => handleLocaleChange('en')}
-        className={`px-3 py-1 text-sm font-mono ${
+        className={`px-2 py-1 text-xs rounded transition-colors ${
           currentLocale === 'en'
-            ? 'bg-brand-primary text-black font-bold'
-            : 'text-gray-400 hover:text-white'
-        } transition-colors`}
+            ? 'bg-muted text-foreground'
+            : 'text-foreground/50 hover:text-foreground hover:bg-muted/50'
+        }`}
       >
         EN
       </button>

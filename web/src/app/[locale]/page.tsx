@@ -7,57 +7,66 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-20 px-4">
-        <div className="absolute inset-0 gradient-doge opacity-10"></div>
-        <div className="container mx-auto relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-6xl md:text-8xl font-display font-bold mb-12 text-white">
+      <section className="py-20 md:py-32 px-4 md:px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="max-w-3xl space-y-8">
+            <h1 className="text-4xl md:text-6xl font-semibold text-foreground leading-tight">
               {t('hero')}
             </h1>
 
+            <p className="text-lg text-foreground/70 leading-relaxed max-w-2xl">
+              Investigating systemic government failures and demanding accountability across Europe.
+            </p>
+
             {/* CTA Button */}
-            <div>
+            <div className="flex gap-4 pt-4">
               <Link
                 href="/investigations"
-                className="inline-block bg-brand-primary hover:bg-brand-accent text-black font-bold text-xl px-12 py-4 transition-all transform hover:scale-105 hover:shadow-2xl"
+                className="btn-primary"
               >
-                {t('cta')} →
+                {t('cta')}
+              </Link>
+              <Link
+                href="/about"
+                className="btn-secondary"
+              >
+                Learn More
               </Link>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Dashed Divider */}
+      <div className="h-px border-t border-dashed border-border/30 max-w-6xl mx-auto" />
+
       {/* Mission Statement */}
-      <section className="py-16 px-4 bg-background-darker">
-        <div className="container mx-auto max-w-4xl">
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div className="border-2 border-brand-accent p-6">
-              <div className="text-4xl mb-4">🔍</div>
-              <h3 className="text-xl font-display font-bold mb-2 text-brand-accent">
+      <section className="py-20 px-4 md:px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="space-y-4">
+              <h3 className="text-lg font-semibold text-foreground">
                 Investigate
               </h3>
-              <p className="text-gray-400">
+              <p className="text-sm text-foreground/50 leading-relaxed">
                 Deep-dive investigations into systemic government failures and inefficiencies
               </p>
             </div>
 
-            <div className="border-2 border-brand-warning p-6">
-              <div className="text-4xl mb-4">📊</div>
-              <h3 className="text-xl font-display font-bold mb-2 text-brand-warning">
+            <div className="space-y-4">
+              <h3 className="text-lg font-semibold text-foreground">
                 Expose
               </h3>
-              <p className="text-gray-400">
+              <p className="text-sm text-foreground/50 leading-relaxed">
                 Transparent, data-driven reporting on accountability failures
               </p>
             </div>
 
-            <div className="border-2 border-brand-danger p-6">
-              <div className="text-4xl mb-4">⚡</div>
-              <h3 className="text-xl font-display font-bold mb-2 text-brand-danger">
+            <div className="space-y-4">
+              <h3 className="text-lg font-semibold text-foreground">
                 Reform
               </h3>
-              <p className="text-gray-400">
+              <p className="text-sm text-foreground/50 leading-relaxed">
                 Concrete recommendations for structural reforms to prevent future crises
               </p>
             </div>

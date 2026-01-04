@@ -9,35 +9,63 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // DOGE Branding - Bold, Disruptive Colors
-        brand: {
-          primary: '#FF6B00',    // Bold orange (DOGE energy)
-          secondary: '#1A1A1A',  // Near black (authority)
-          accent: '#00D9FF',     // Electric blue (disruption)
-          warning: '#FFD700',    // Gold (accountability spotlight)
-          danger: '#FF0054',     // Hot pink (urgent alerts)
-        },
+        // Minimalist, Professional Color Scheme (inspired by Vibe Kanban)
         background: {
-          dark: '#0A0A0A',
-          darker: '#000000',
-          light: '#F5F5F5',
-        }
+          DEFAULT: '#1f2937',     // Deep charcoal
+          darker: '#111827',      // Darker variation
+          light: '#374151',       // Lighter variation
+        },
+        foreground: {
+          DEFAULT: '#f9fafb',     // Light text
+          muted: '#9ca3af',       // Muted text
+        },
+        border: {
+          DEFAULT: '#4b5563',     // Default border
+          muted: '#374151',       // Muted border
+        },
+        muted: {
+          DEFAULT: '#374151',     // Muted background
+          foreground: '#9ca3af',  // Muted text
+        },
+        accent: {
+          DEFAULT: '#60a5fa',     // Subtle blue accent
+          foreground: '#f9fafb',  // Accent text
+        },
+        card: {
+          DEFAULT: '#1f2937',     // Card background
+          foreground: '#f9fafb',  // Card text
+        },
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        display: ['var(--font-space-grotesk)', 'sans-serif'],
-        mono: ['var(--font-jetbrains-mono)', 'monospace'],
+        sans: ['system-ui', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji'],
+        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
+      },
+      borderRadius: {
+        lg: '0.5rem',
+        md: '0.375rem',
+        sm: '0.25rem',
       },
       typography: {
         DEFAULT: {
           css: {
-            maxWidth: '80ch',
-            color: '#333',
+            maxWidth: '65ch',
+            color: '#f9fafb',
             a: {
-              color: '#FF6B00',
+              color: '#60a5fa',
+              textDecoration: 'none',
               '&:hover': {
-                color: '#00D9FF',
+                color: '#93c5fd',
               },
+            },
+            h1: { color: '#f9fafb' },
+            h2: { color: '#f9fafb' },
+            h3: { color: '#f9fafb' },
+            h4: { color: '#f9fafb' },
+            strong: { color: '#f9fafb' },
+            code: { color: '#f9fafb' },
+            blockquote: {
+              color: '#9ca3af',
+              borderLeftColor: '#4b5563',
             },
           },
         },
