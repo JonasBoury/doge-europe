@@ -1,5 +1,4 @@
-# Investigations (sensitive data)
-investigations/*/documents/
+# Investigations (only exclude raw financial data)
 investigations/*/financial/
 
 # Web App

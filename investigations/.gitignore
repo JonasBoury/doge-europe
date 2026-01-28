@@ -1,8 +1,10 @@
-# Ignore all investigation files (sensitive research data)
-*
+# Track all investigation files (public transparency)
+# Only ignore sensitive subdirectories that may contain personal data
 
-# But track the .gitignore file itself
-!.gitignore
+# Ignore financial analysis with raw data
+*/financial/
 
-# And track the README
-!README.md
+# Ignore network maps with personal relationships
+*/networks/
+
+# Keep everything else public
