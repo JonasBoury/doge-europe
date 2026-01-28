@@ -353,28 +353,17 @@ payment_milestones:
                                    │
                                    ▼
 ┌─────────────────────────────────────────────────────────────────────┐
-│                         API GATEWAY (REST/GraphQL)                   │
+│                         CONVEX (Backend Platform)                    │
+│  ┌─────────────────────────────────────────────────────────────┐   │
+│  │  Real-time Database │ File Storage │ Scheduled Jobs         │   │
+│  └─────────────────────────────────────────────────────────────┘   │
 └─────────────────────────────────────────────────────────────────────┘
                                    │
         ┌──────────────────────────┼──────────────────────────┐
         ▼                          ▼                          ▼
 ┌───────────────┐         ┌───────────────┐         ┌───────────────┐
-│   Challenge   │         │     Team      │         │  Evaluation   │
-│   Service     │         │   Service     │         │   Service     │
-└───────────────┘         └───────────────┘         └───────────────┘
-        │                          │                          │
-        └──────────────────────────┼──────────────────────────┘
-                                   ▼
-┌─────────────────────────────────────────────────────────────────────┐
-│                         DATABASE (PostgreSQL)                        │
-└─────────────────────────────────────────────────────────────────────┘
-                                   │
-        ┌──────────────────────────┼──────────────────────────┐
-        ▼                          ▼                          ▼
-┌───────────────┐         ┌───────────────┐         ┌───────────────┐
-│   File       │         │   Identity    │         │   Payment     │
-│   Storage    │         │   Provider    │         │   Provider    │
-│   (S3)       │         │   (eID/ITSME) │         │   (Treasury)  │
+│   Clerk      │         │   Resend      │         │   Evaluation  │
+│   (Auth)     │         │   (Email)     │         │   Services    │
 └───────────────┘         └───────────────┘         └───────────────┘
 ```
 
@@ -383,20 +372,30 @@ payment_milestones:
 | Layer | Technology | Rationale |
 |-------|------------|-----------|
 | Frontend | Next.js 14+ | SSR, App Router, React ecosystem |
-| API | tRPC or REST | Type safety, simplicity |
-| Database | PostgreSQL | Relational data, JSON support |
-| Auth | NextAuth + eID | Government identity integration |
-| Storage | S3-compatible | Submissions, documents |
-| Search | Meilisearch | Fast, typo-tolerant search |
-| Queue | BullMQ | Background jobs (evaluations) |
-| Cache | Redis | Session, API caching |
-| Monitoring | OpenTelemetry | Observability |
+| Backend | Convex | Real-time DB, file storage, scheduled jobs, type-safe |
+| Auth | Clerk | First-class Convex integration, OAuth + future eID |
+| Email | Resend | React Email support, EU-friendly |
+| Evaluation | axe-core, Lighthouse | Automated accessibility/performance checks |
+| Deployment | Vercel + Convex Cloud | Zero-ops, preview deploys |
 
-### Deployment Options
+### Why Convex?
 
-1. **Self-hosted** - Docker Compose for small deployments
-2. **Kubernetes** - Helm charts for scalable deployment
-3. **Managed** - DOGE Europe hosted (future SaaS option)
+- **Real-time by default** - Live dashboards, instant updates
+- **End-to-end TypeScript** - No code generation, automatic types
+- **Built-in file storage** - Demo videos, documents
+- **Scheduled functions** - Deadline reminders, evaluation jobs
+- **Zero infrastructure** - Focus on features, not ops
+
+### Deployment
+
+**Current:** Convex Cloud (US) + Vercel
+
+**EU Migration Path (if required):**
+1. Self-host Convex on Hetzner/Scaleway (Germany/France)
+2. Move frontend to Coolify or self-hosted
+3. Replace Clerk with self-hosted auth
+
+See [TECHNICAL_DECISIONS.md](./TECHNICAL_DECISIONS.md) for full architecture details.
 
 ---
 
