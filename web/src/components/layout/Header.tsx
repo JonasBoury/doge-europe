@@ -48,6 +48,12 @@ export default function Header() {
             >
               {t('about')}
             </Link>
+            <Link
+              href="/reform"
+              className="px-3 py-2 text-sm text-foreground-secondary hover:text-foreground hover:bg-background-secondary rounded-lg transition-colors"
+            >
+              {t('reform')}
+            </Link>
 
             {/* Donate Button */}
             <Link
