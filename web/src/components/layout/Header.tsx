@@ -3,57 +3,60 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import LanguageSwitcher from './LanguageSwitcher';
+import ThemeToggle from '@/components/ui/ThemeToggle';
 
 export default function Header() {
   const t = useTranslations('nav');
 
   return (
-    <header className="border-b border-dashed border-border/30 bg-background">
-      <div className="max-w-6xl mx-auto px-4 md:px-6 py-4">
+    <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 py-4">
         <nav className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
-            <div className="text-xl font-semibold">
-              <span className="text-foreground group-hover:text-accent transition-colors">
+            <div className="text-xl font-semibold tracking-tight">
+              <span className="font-display text-foreground group-hover:text-accent transition-colors">
                 DOGE
               </span>
-              <span className="text-foreground/70"> Europe</span>
+              <span className="text-foreground-secondary"> Europe</span>
             </div>
           </Link>
 
           {/* Navigation Links */}
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-1">
             <Link
               href="/"
-              className="text-sm text-foreground/70 hover:text-foreground transition-colors"
+              className="px-3 py-2 text-sm text-foreground-secondary hover:text-foreground hover:bg-background-secondary rounded-lg transition-colors"
             >
               {t('home')}
             </Link>
-            <div className="h-4 w-px border-l border-dashed border-border/30" />
             <Link
               href="/investigations"
-              className="text-sm text-foreground/70 hover:text-foreground transition-colors"
+              className="px-3 py-2 text-sm text-foreground-secondary hover:text-foreground hover:bg-background-secondary rounded-lg transition-colors"
             >
               {t('investigations')}
             </Link>
-            <div className="h-4 w-px border-l border-dashed border-border/30" />
             <Link
-              href="/coalition-builder"
-              className="text-sm text-foreground/70 hover:text-foreground transition-colors"
+              href="/tools"
+              className="px-3 py-2 text-sm text-foreground-secondary hover:text-foreground hover:bg-background-secondary rounded-lg transition-colors"
             >
-              {t('coalitionBuilder')}
+              {t('tools')}
             </Link>
-            <div className="h-4 w-px border-l border-dashed border-border/30" />
             <Link
               href="/about"
-              className="text-sm text-foreground/70 hover:text-foreground transition-colors"
+              className="px-3 py-2 text-sm text-foreground-secondary hover:text-foreground hover:bg-background-secondary rounded-lg transition-colors"
             >
               {t('about')}
             </Link>
 
+            {/* Divider */}
+            <div className="h-5 w-px bg-border mx-2" />
+
             {/* Language Switcher */}
-            <div className="h-4 w-px border-l border-dashed border-border/30" />
             <LanguageSwitcher />
+
+            {/* Theme Toggle */}
+            <ThemeToggle />
           </div>
         </nav>
       </div>

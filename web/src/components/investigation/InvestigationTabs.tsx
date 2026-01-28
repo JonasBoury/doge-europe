@@ -25,16 +25,16 @@ export default function InvestigationTabs({ investigation }: Props) {
   return (
     <div>
       {/* Tab Navigation */}
-      <div className="border-b-2 border-brand-secondary mb-8">
+      <div className="border-b border-border mb-8">
         <div className="flex space-x-1">
           {tabs.map((tab) => (
             <button
               key={tab.key}
               onClick={() => setActiveTab(tab.key)}
-              className={`px-6 py-3 font-bold transition-colors ${
+              className={`px-6 py-3 font-medium transition-colors rounded-t-lg ${
                 activeTab === tab.key
-                  ? 'bg-brand-primary text-black border-b-4 border-brand-primary'
-                  : 'text-gray-400 hover:text-white hover:bg-background-darker'
+                  ? 'bg-background-secondary text-accent border-b-2 border-accent'
+                  : 'text-foreground-tertiary hover:text-foreground hover:bg-background-secondary'
               }`}
             >
               {tab.label}
@@ -46,25 +46,25 @@ export default function InvestigationTabs({ investigation }: Props) {
       {/* Tab Content */}
       <div className="min-h-[600px]">
         {activeTab === 'overview' && (
-          <div className="prose prose-invert max-w-none">
+          <div className="max-w-none">
             <MarkdownContent content={investigation.overview} />
           </div>
         )}
 
         {activeTab === 'timeline' && (
-          <div className="prose prose-invert max-w-none">
+          <div className="max-w-none">
             <MarkdownContent content={investigation.timeline} />
           </div>
         )}
 
         {activeTab === 'sources' && (
-          <div className="prose prose-invert max-w-none">
+          <div className="max-w-none">
             <MarkdownContent content={investigation.sources} />
           </div>
         )}
 
         {activeTab === 'notes' && (
-          <div className="prose prose-invert max-w-none">
+          <div className="max-w-none">
             <MarkdownContent content={investigation.notes} />
           </div>
         )}
