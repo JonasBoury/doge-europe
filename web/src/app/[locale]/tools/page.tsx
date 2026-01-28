@@ -1,4 +1,3 @@
-import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 
 const tools = [
@@ -62,8 +61,6 @@ const tools = [
 ];
 
 export default function ToolsPage() {
-  const t = useTranslations('nav');
-
   return (
     <div className="min-h-screen">
       {/* Header */}
@@ -174,7 +171,7 @@ export default function ToolsPage() {
             Have an idea for a tool?
           </h2>
           <p className="mt-2 text-foreground-secondary">
-            We're always looking to build tools that help citizens understand government operations better.
+            We&apos;re always looking to build tools that help citizens understand government operations better.
           </p>
           <a
             href="https://github.com/jonasboury/doge-europe/issues/new"

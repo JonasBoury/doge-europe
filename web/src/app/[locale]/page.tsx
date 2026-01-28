@@ -60,7 +60,7 @@ export default function HomePage() {
                 Across 3 failed government IT projects in Belgium alone
               </p>
               <p className="mt-2 text-sm text-foreground-tertiary">
-                That's €438 per Flemish household
+                That&apos;s €438 per Flemish household
               </p>
             </div>
 
@@ -168,7 +168,7 @@ export default function HomePage() {
                 Persona Project: €16M Wasted
               </h2>
               <p className="mt-4 text-foreground-secondary leading-relaxed">
-                Five years and €16 million later, the Flemish education administration's modernization project delivered only 8-10% of promised functionality. Our investigation reveals a systemic governance failure.
+                Five years and €16 million later, the Flemish education administration&apos;s modernization project delivered only 8-10% of promised functionality. Our investigation reveals a systemic governance failure.
               </p>
               <div className="mt-6 flex flex-wrap gap-4">
                 <Link href="/investigations/case-004-persona-onderwijsadministratie" className="btn-primary">
