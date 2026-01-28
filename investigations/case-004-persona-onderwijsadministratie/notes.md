@@ -181,19 +181,31 @@ Directly referenced in VRT analysis as a parallel failure. iPolice was even larg
 
 ## Research Progress
 
+### Completed
 - [x] Initial news coverage review (VRT, V-Nieuws, VB, ITdaily, Schoolit)
-- [x] Key facts and figures established
-- [x] Vendor structure identified
-- [x] Political timeline mapped
-- [x] Comparative context gathered
+- [x] Key facts and figures established (€16M, 8-10%, 5 years)
+- [x] Vendor structure identified (Cronos, DXC-Cegeka, Atos, Proximus)
+- [x] Political timeline mapped (Weyts 2020 → Demir 2026)
+- [x] Comparative context gathered (iPolice €75.8M, JustSign €4M)
 - [x] Source database built with 24 sources
-- [ ] Moore audit report — PRIORITY: must obtain full text
-- [ ] Parliamentary questions review (De Loor 2023, Warnez 2021)
-- [ ] AGODI Jaarverslag 2023 analysis
-- [ ] 2022 Persona infosessie presentation review
-- [ ] Vendor contract analysis
-- [ ] Financial breakdown by vendor/year
-- [ ] Steering committee documentation
-- [ ] Crisis manager identity and mandate
-- [ ] Rekenhof involvement status
-- [ ] Draft findings report
+- [x] Critical analysis written (6 root causes identified)
+- [x] Full functional requirements documented (all 14 RL types mapped)
+- [x] Modern MVP proposal created (React/Next.js/PostgreSQL architecture)
+- [x] Crisis manager status checked — 2 appointed, names NOT YET PUBLIC
+- [x] Rekenhof status checked — NO AUDIT ANNOUNCED (Audit Vlaanderen deferred to Rekenhof)
+
+### Blocked — Requires FOI Request or Not Yet Public
+- [ ] Moore audit report — NOT PUBLIC (request via parliament or FOI)
+- [ ] Parliamentary questions (De Loor 2023, Warnez 2021) — PDFs exist but not extractable
+- [ ] AGODI Jaarverslag 2023 — PDF not accessible
+- [ ] 2022 Persona infosessie presentation — PDF not accessible
+- [ ] Vendor contract details and values — NOT PUBLIC
+- [ ] Financial breakdown by vendor/year — NOT PUBLIC
+- [ ] Steering committee documentation — NOT PUBLIC
+
+### Next Actions
+- [ ] File FOI request for Moore audit report
+- [ ] File FOI request for vendor contracts and financial breakdown
+- [ ] Monitor for crisis manager appointments (names)
+- [ ] Monitor for Rekenhof audit initiation
+- [ ] Draft public findings report based on available evidence
