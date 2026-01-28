@@ -9,9 +9,9 @@ export default function LandingPage() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">OC</span>
+                <span className="text-white font-bold text-sm">GC</span>
               </div>
-              <span className="font-semibold text-gray-900">Open Challenge</span>
+              <span className="font-semibold text-gray-900">GovChallenge</span>
             </div>
             <div className="flex items-center gap-4">
               <Link
@@ -517,9 +517,9 @@ export default function LandingPage() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">OC</span>
+                <span className="text-white font-bold text-sm">GC</span>
               </div>
-              <span className="font-semibold text-white">Open Challenge</span>
+              <span className="font-semibold text-white">GovChallenge</span>
             </div>
             <div className="flex items-center gap-6 text-sm text-gray-400">
               <span>

@@ -8,13 +8,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Open Challenge | A Better Way to Build Government Tech",
+  title: "GovChallenge | A Better Way to Build Government Tech",
   description:
     "Challenge-based procurement for digital services. Working software, not endless proposals.",
   openGraph: {
-    title: "Open Challenge | A Better Way to Build Government Tech",
+    title: "GovChallenge | A Better Way to Build Government Tech",
     description:
       "Challenge-based procurement for digital services. Working software, not endless proposals.",
+    url: "https://govchallenge.eu",
     type: "website",
   },
 };
