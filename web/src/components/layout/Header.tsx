@@ -49,6 +49,14 @@ export default function Header() {
               {t('about')}
             </Link>
 
+            {/* Donate Button */}
+            <Link
+              href="/donate"
+              className="ml-2 px-4 py-2 text-sm font-medium bg-accent text-white rounded-lg hover:bg-accent-hover transition-colors"
+            >
+              {t('donate')}
+            </Link>
+
             {/* Divider */}
             <div className="h-5 w-px bg-border mx-2" />
 
