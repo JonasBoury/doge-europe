@@ -16,6 +16,7 @@ export default function Header() {
     { href: '/tools' as const, label: t('tools') },
     { href: '/about' as const, label: t('about') },
     { href: '/reform' as const, label: t('reform') },
+    { href: '/join' as const, label: t('join') },
   ];
 
   return (

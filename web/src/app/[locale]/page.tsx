@@ -15,11 +15,11 @@ export default function HomePage() {
             </h1>
 
             <p className="text-lg md:text-xl text-foreground-secondary leading-relaxed max-w-2xl">
-              A community of investigators and builders working for government efficiency — without waiting for government permission.
+              A team of young builders and investigators with the moral ambition to fix what&apos;s broken in government — instead of extracting from it.
             </p>
 
             <p className="text-base text-foreground-tertiary leading-relaxed max-w-2xl">
-              We dig into failed projects, expose waste, and identify what citizens actually need. Then we build it. No procurement processes. No 3-year tender cycles. No €75M consulting contracts.
+              A department that runs like a startup. We take ownership. We don&apos;t outsource to Deloitte, subcontract through 4 layers, and hope for the best. We find the biggest problems, build the solutions, and ship them to millions of citizens.
             </p>
 
             {/* CTA Buttons */}
@@ -48,29 +48,29 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Investigate */}
+            {/* Recruit */}
             <div className="p-6 rounded-xl bg-background border border-border hover:border-accent/30 transition-colors">
               <div className="w-12 h-12 rounded-xl bg-accent-subtle flex items-center justify-center mb-4">
                 <span className="text-2xl font-display font-bold text-accent">1</span>
               </div>
               <h3 className="text-lg font-semibold text-foreground">
-                Investigate
+                Recruit
               </h3>
               <p className="mt-2 text-sm text-foreground-secondary leading-relaxed">
-                Deep-dive into government failures, follow the money, expose the waste.
+                Find young builders and fixers with moral ambition, not Deloitte consultants.
               </p>
             </div>
 
-            {/* Identify */}
+            {/* Investigate */}
             <div className="p-6 rounded-xl bg-background border border-border hover:border-accent/30 transition-colors">
               <div className="w-12 h-12 rounded-xl bg-accent-subtle flex items-center justify-center mb-4">
                 <span className="text-2xl font-display font-bold text-accent">2</span>
               </div>
               <h3 className="text-lg font-semibold text-foreground">
-                Identify
+                Investigate
               </h3>
               <p className="mt-2 text-sm text-foreground-secondary leading-relaxed">
-                Understand what citizens and governments actually need.
+                Deep-dive into the biggest government failures, follow the money.
               </p>
             </div>
 
@@ -83,7 +83,7 @@ export default function HomePage() {
                 Build
               </h3>
               <p className="mt-2 text-sm text-foreground-secondary leading-relaxed">
-                Create open-source solutions that work.
+                Take ownership, create solutions that work, run like a startup.
               </p>
             </div>
 
@@ -96,7 +96,7 @@ export default function HomePage() {
                 Ship
               </h3>
               <p className="mt-2 text-sm text-foreground-secondary leading-relaxed">
-                Deploy tools people can use today, bypassing broken procurement.
+                Deploy to millions of citizens who are already waiting.
               </p>
             </div>
           </div>
@@ -281,30 +281,36 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Join the Community CTA */}
+      {/* Join the DOGE Team CTA */}
       <section className="py-16 md:py-24 px-4 md:px-8 bg-accent-subtle">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
-            Join the Community
+            Join the DOGE Team
           </h2>
-          <p className="mt-4 text-foreground-secondary leading-relaxed">
-            Whether you&apos;re an investigator, developer, designer, or concerned citizen — there&apos;s a place for you. Help us build the government tools that should exist.
+          <p className="mt-4 text-lg text-foreground-secondary leading-relaxed">
+            You&apos;re 25. You can build. You want your work to matter.
+          </p>
+          <p className="mt-3 text-foreground-tertiary leading-relaxed">
+            Option A: Join a consulting firm. Bill hours. Make slides. Watch your &ldquo;deliverables&rdquo; collect dust on a SharePoint nobody opens.
+          </p>
+          <p className="mt-3 text-foreground-secondary leading-relaxed font-medium">
+            Option B: Join DOGE. Investigate a €75M failure. Build the replacement. Ship it to 11 million people.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <Link href="/join" className="btn-primary">
+              Apply Now
+            </Link>
             <a
               href="https://github.com/jonasboury/doge-europe"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary inline-flex"
+              className="btn-secondary inline-flex"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
               </svg>
               Contribute on GitHub
             </a>
-            <Link href="/donate" className="btn-secondary">
-              Support Our Work
-            </Link>
           </div>
         </div>
       </section>
