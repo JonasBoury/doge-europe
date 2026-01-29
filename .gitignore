@@ -30,3 +30,11 @@ yarn-error.log*
 # Temp
 .tmp/
 temp/
+
+# Codename Grove (contains copies of .env files with secrets)
+.codename-grove/
+
+# Persona MVP local env
+persona-mvp/.env*.local
+persona-mvp/node_modules/
+persona-mvp/.next/
