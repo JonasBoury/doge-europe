@@ -5,6 +5,7 @@ import { Inter, Space_Grotesk } from 'next/font/google';
 import { routing } from '@/i18n/routing';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import ConvexClientProvider from '@/app/ConvexClientProvider';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -41,15 +42,17 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <body className="font-sans">
-        <NextIntlClientProvider messages={messages}>
-          <div className="flex flex-col min-h-screen">
-            <Header />
-            <main className="flex-grow">
-              {children}
-            </main>
-            <Footer />
-          </div>
-        </NextIntlClientProvider>
+        <ConvexClientProvider>
+          <NextIntlClientProvider messages={messages}>
+            <div className="flex flex-col min-h-screen">
+              <Header />
+              <main className="flex-grow">
+                {children}
+              </main>
+              <Footer />
+            </div>
+          </NextIntlClientProvider>
+        </ConvexClientProvider>
       </body>
     </html>
   );

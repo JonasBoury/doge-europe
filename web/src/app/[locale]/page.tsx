@@ -1,4 +1,5 @@
 import { Link } from '@/i18n/routing';
+import Subscribe from '@/components/Subscribe';
 
 export default function HomePage() {
   return (
@@ -306,6 +307,19 @@ export default function HomePage() {
               </svg>
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Stay Updated */}
+      <section className="py-16 md:py-24 px-4 md:px-8 bg-background-secondary">
+        <div className="max-w-3xl mx-auto text-center space-y-6">
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
+            Stay Updated
+          </h2>
+          <p className="text-foreground-secondary">
+            Get notified when we publish new investigations or ship new tools.
+          </p>
+          <Subscribe />
         </div>
       </section>
 
