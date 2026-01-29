@@ -139,7 +139,7 @@ export default function DonatePage() {
               <label className="text-sm font-medium text-foreground-secondary mb-3 block">
                 Select Amount
               </label>
-              <div className="grid grid-cols-3 gap-3 mb-4">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-4">
                 {presetAmounts.map((preset) => (
                   <button
                     key={preset}
