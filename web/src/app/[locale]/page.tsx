@@ -25,11 +25,11 @@ export default function HomePage() {
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4 pt-4">
-              <Link href="/investigations" className="btn-primary">
-                View Investigations
+              <Link href="/join" className="btn-primary">
+                Join as Builder
               </Link>
-              <Link href="/tools" className="btn-secondary">
-                Explore Tools
+              <Link href="/support" className="btn-secondary">
+                Support the Initiative
               </Link>
             </div>
           </div>

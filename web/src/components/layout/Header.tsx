@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -9,6 +9,14 @@ import ThemeToggle from '@/components/ui/ThemeToggle';
 export default function Header() {
   const t = useTranslations('nav');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [brandName, setBrandName] = useState('Europe');
+
+  useEffect(() => {
+    const host = window.location.hostname;
+    if (host.includes('dogebelgium')) {
+      setBrandName('Belgium');
+    }
+  }, []);
 
   const navLinks = [
     { href: '/' as const, label: t('home') },
@@ -16,6 +24,7 @@ export default function Header() {
     { href: '/tools' as const, label: t('tools') },
     { href: '/about' as const, label: t('about') },
     { href: '/reform' as const, label: t('reform') },
+    { href: '/manifesto' as const, label: t('manifesto') },
     { href: '/join' as const, label: t('join') },
   ];
 
@@ -29,7 +38,7 @@ export default function Header() {
               <span className="font-display text-foreground group-hover:text-accent transition-colors">
                 DOGE
               </span>
-              <span className="text-foreground-secondary"> Europe</span>
+              <span className="text-foreground-secondary"> {brandName}</span>
             </div>
           </Link>
 

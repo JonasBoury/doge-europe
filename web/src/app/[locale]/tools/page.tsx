@@ -2,6 +2,26 @@ import { Link } from '@/i18n/routing';
 
 const tools = [
   {
+    id: 'govchallenge',
+    name: 'GovChallenge',
+    description: 'Challenge-based procurement platform. Governments define problems, teams build working prototypes in 12 weeks, winners get paid for results.',
+    href: 'https://www.govchallenge.eu/',
+    status: 'active',
+    external: true,
+    relatedInvestigation: null,
+    features: [
+      'Define challenges (2 weeks)',
+      'Build prototypes (8–12 weeks)',
+      'Evaluate solutions (2 weeks)',
+      'Reward results, not proposals'
+    ],
+    icon: (
+      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+      </svg>
+    )
+  },
+  {
     id: 'coalition-builder',
     name: 'Brussels Coalition Builder',
     description: 'Interactive tool to explore potential coalition combinations for the Brussels regional government based on the 2024 election results.',
@@ -142,7 +162,16 @@ export default function ToolsPage() {
 
                 {/* CTA */}
                 <div className="mt-6">
-                  {tool.status === 'active' ? (
+                  {tool.status === 'active' && tool.external ? (
+                    <a
+                      href={tool.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-primary w-full justify-center"
+                    >
+                      Visit Site ↗
+                    </a>
+                  ) : tool.status === 'active' ? (
                     <Link
                       href={tool.href}
                       className="btn-primary w-full justify-center"
