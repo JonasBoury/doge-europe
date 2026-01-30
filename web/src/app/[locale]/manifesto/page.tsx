@@ -11,10 +11,10 @@ export default function ManifestoPage() {
               The Manifesto
             </p>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-[1.1] tracking-tight">
-              Government needs a tech department that actually builds.
+              Belgium deserves a government that builds.
             </h1>
             <p className="text-lg md:text-xl text-foreground-secondary leading-relaxed">
-              Not a procurement office. Not a committee. Not an outsourcing machine. A motivated team with a mandate to investigate, fix, and build. No bullshit.
+              Not a procurement office. Not a committee. Not an outsourcing machine. A motivated team with a mandate to investigate, fix, and build GOV OS &mdash; the open-source operating system for Belgian government. No bullshit.
             </p>
           </div>
         </div>
@@ -35,7 +35,7 @@ export default function ManifestoPage() {
                 A ministry needs software. They write a 47-page tender. A consulting firm wins the contract. They subcontract to another firm. Who subcontracts to another. Four layers deep, nobody owns the outcome. Three years later: over budget, under-delivered, and the citizens it was meant to serve are still using paper forms.
               </p>
               <p>
-                This isn&apos;t an accident. It&apos;s the system working as designed. Accountability disappears in the subcontracting chain. Incentives reward billing hours, not shipping software. And the people who could actually build these systems &mdash; they&apos;d never touch a government tender with a ten-foot pole.
+                Critical government infrastructure runs on US big tech and consulting firms that have repeatedly failed to deliver. Belgian citizen data is governed by the US CLOUD Act. This isn&apos;t an accident. It&apos;s the system working as designed.
               </p>
             </div>
 
@@ -57,8 +57,43 @@ export default function ManifestoPage() {
         </div>
       </section>
 
-      {/* What We Demand */}
+      {/* The Vision: GOV OS */}
       <section className="py-16 md:py-24 px-4 md:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="max-w-3xl space-y-8">
+            <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
+              The Vision: GOV OS
+            </h2>
+            <p className="text-lg text-foreground-secondary leading-relaxed">
+              An open-source, sovereign operating system for Belgian government. Not another failed IT project &mdash; a permanent, shared software layer that every level of government can use.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-4">
+              <div className="p-6 rounded-xl bg-background-secondary border border-accent/30">
+                <h3 className="text-lg font-semibold text-foreground mb-2">Open Source</h3>
+                <p className="text-sm text-foreground-secondary leading-relaxed">
+                  Every line of code is public. Citizens pay for it &mdash; citizens own it. No vendor lock-in. No black boxes. Transparency by design.
+                </p>
+              </div>
+              <div className="p-6 rounded-xl bg-background-secondary border border-accent/30">
+                <h3 className="text-lg font-semibold text-foreground mb-2">Decentralised</h3>
+                <p className="text-sm text-foreground-secondary leading-relaxed">
+                  No single point of failure. Each agency owns its data. Exchange happens peer-to-peer. Small, independent modules &mdash; not monoliths.
+                </p>
+              </div>
+              <div className="p-6 rounded-xl bg-background-secondary border border-accent/30">
+                <h3 className="text-lg font-semibold text-foreground mb-2">Sovereign</h3>
+                <p className="text-sm text-foreground-secondary leading-relaxed">
+                  Belgian data on European infrastructure. Governed by Belgian law. No dependency on foreign tech monopolies. Digital sovereignty is non-negotiable.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What We Demand */}
+      <section className="py-16 md:py-24 px-4 md:px-8 bg-background-secondary">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl space-y-8">
             <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
@@ -69,31 +104,66 @@ export default function ManifestoPage() {
             </p>
 
             <div className="space-y-6">
-              <div className="p-6 rounded-xl bg-background-secondary border border-border">
+              <div className="p-6 rounded-xl bg-background border border-border">
                 <h3 className="text-lg font-semibold text-foreground">No tenders for building software</h3>
                 <p className="mt-2 text-sm text-foreground-secondary leading-relaxed">
-                  You don&apos;t tender for your engineering team. You hire them, give them ownership, and let them build. Government should do the same. Hire builders, not procurement officers.
+                  You don&apos;t tender for your engineering team. You hire them, give them ownership, and let them build. Government should do the same.
                 </p>
               </div>
 
-              <div className="p-6 rounded-xl bg-background-secondary border border-border">
+              <div className="p-6 rounded-xl bg-background border border-border">
                 <h3 className="text-lg font-semibold text-foreground">No subcontracting chains</h3>
                 <p className="mt-2 text-sm text-foreground-secondary leading-relaxed">
-                  When a project fails after 4 layers of subcontracting, who&apos;s responsible? Nobody. That&apos;s the point. The people who write the code should own the outcome. One team, full accountability.
+                  The people who write the code should own the outcome. One team, full accountability. Not 4 layers of contractors where nobody is responsible.
                 </p>
               </div>
 
-              <div className="p-6 rounded-xl bg-background-secondary border border-border">
+              <div className="p-6 rounded-xl bg-background border border-border">
                 <h3 className="text-lg font-semibold text-foreground">Builders who own what they ship</h3>
                 <p className="mt-2 text-sm text-foreground-secondary leading-relaxed">
-                  Not contractors who disappear after the contract ends. Permanent builders who maintain, iterate, and improve. Your name is on the code. Your reputation is on the line.
+                  Not contractors who disappear after the contract ends. Permanent builders who maintain, iterate, and improve. Your name is on the code.
                 </p>
               </div>
 
-              <div className="p-6 rounded-xl bg-background-secondary border border-accent/30">
+              <div className="p-6 rounded-xl bg-background border border-accent/30">
                 <h3 className="text-lg font-semibold text-foreground">100% transparency</h3>
                 <p className="mt-2 text-sm text-foreground-secondary leading-relaxed">
-                  Every euro spent, public. Every line of code, open source. Every decision, documented. Citizens pay for this &mdash; citizens should see exactly where their money goes and what it produces.
+                  Every euro spent, public. Every line of code, open source. Every decision, documented. Citizens should see exactly where their money goes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The Approach */}
+      <section className="py-16 md:py-24 px-4 md:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="max-w-3xl space-y-8">
+            <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
+              The Approach
+            </h2>
+
+            <div className="space-y-6">
+              <div className="p-6 rounded-xl bg-background-secondary border border-accent/30">
+                <span className="text-2xl font-display font-bold text-accent">1</span>
+                <h3 className="mt-3 font-semibold text-foreground">Build the Team</h3>
+                <p className="mt-2 text-sm text-foreground-secondary">
+                  Recruit the best young builders, investigators, and fixers. Prove that a small, motivated team can out-deliver entire consulting firms. Investigate the biggest failures, build prototypes, ship.
+                </p>
+              </div>
+              <div className="p-6 rounded-xl bg-background-secondary border border-border">
+                <span className="text-2xl font-display font-bold text-accent">2</span>
+                <h3 className="mt-3 font-semibold text-foreground">Get the Mandate</h3>
+                <p className="mt-2 text-sm text-foreground-secondary">
+                  Build public support. Show what&apos;s possible. Get the political mandate to build government software &mdash; not advise on it, not outsource it, build it.
+                </p>
+              </div>
+              <div className="p-6 rounded-xl bg-background-secondary border border-border">
+                <span className="text-2xl font-display font-bold text-accent">3</span>
+                <h3 className="mt-3 font-semibold text-foreground">Build GOV OS</h3>
+                <p className="mt-2 text-sm text-foreground-secondary">
+                  The endgame: an open-source, sovereign operating system for all Belgian government. Identity, payments, documents, communication &mdash; all on open standards, decentralised architecture, and European infrastructure.
                 </p>
               </div>
             </div>
@@ -114,7 +184,7 @@ export default function ManifestoPage() {
                 { left: 'Ownership', right: 'Outsourcing', desc: 'The people who build it should own it. No more "it\'s the vendor\'s problem."' },
                 { left: 'Speed', right: 'Process', desc: 'Ship in weeks, not years. Iterate based on real usage, not committee feedback.' },
                 { left: 'Transparency', right: 'Secrecy', desc: 'Open source by default. Public budgets. Citizens can see what they\'re paying for.' },
-                { left: 'Results', right: 'Reports', desc: 'Measure what ships, not what\'s presented. Working software over PowerPoint decks.' },
+                { left: 'Sovereignty', right: 'Dependency', desc: 'European infrastructure. Belgian law. No foreign government can compel access to citizen data.' },
                 { left: 'Builders', right: 'Consultants', desc: 'Hire people who make things. Not people who advise people who manage people who might eventually make things.' },
               ].map((item) => (
                 <div key={item.left} className="flex items-start gap-6">
@@ -133,46 +203,23 @@ export default function ManifestoPage() {
         </div>
       </section>
 
-      {/* How It Works */}
+      {/* The Core Bet */}
       <section className="py-16 md:py-24 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="max-w-3xl space-y-8">
+          <div className="max-w-3xl space-y-6">
             <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
-              How It Works
+              The Core Bet
             </h2>
-            <p className="text-foreground-secondary leading-relaxed">
-              We&apos;re not waiting for permission. We&apos;re proving it works.
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="p-6 rounded-xl bg-background-secondary border border-border">
-                <span className="text-2xl font-display font-bold text-accent">1</span>
-                <h3 className="mt-3 font-semibold text-foreground">Recruit builders</h3>
-                <p className="mt-2 text-sm text-foreground-secondary">
-                  Find the young engineers, designers, and investigators who want their work to matter.
-                </p>
-              </div>
-              <div className="p-6 rounded-xl bg-background-secondary border border-border">
-                <span className="text-2xl font-display font-bold text-accent">2</span>
-                <h3 className="mt-3 font-semibold text-foreground">Investigate failures</h3>
-                <p className="mt-2 text-sm text-foreground-secondary">
-                  Follow the money. Understand why projects fail. Document everything publicly.
-                </p>
-              </div>
-              <div className="p-6 rounded-xl bg-background-secondary border border-border">
-                <span className="text-2xl font-display font-bold text-accent">3</span>
-                <h3 className="mt-3 font-semibold text-foreground">Build replacements</h3>
-                <p className="mt-2 text-sm text-foreground-secondary">
-                  Prototype working solutions in weeks. Prove that modern teams can deliver what legacy vendors couldn&apos;t.
-                </p>
-              </div>
-              <div className="p-6 rounded-xl bg-background-secondary border border-border">
-                <span className="text-2xl font-display font-bold text-accent">4</span>
-                <h3 className="mt-3 font-semibold text-foreground">Ship to citizens</h3>
-                <p className="mt-2 text-sm text-foreground-secondary">
-                  Deploy to millions. Measure real impact. Iterate. Repeat.
-                </p>
-              </div>
+            <div className="space-y-4 text-foreground-secondary leading-relaxed">
+              <p>
+                <strong className="text-foreground">Open source beats proprietary</strong> at government scale &mdash; because transparency, auditability, and community contribution matter more than vendor support contracts.
+              </p>
+              <p>
+                <strong className="text-foreground">Small teams beat big consultancies</strong> &mdash; because 5 engineers who own a service will always outperform 50 consultants who don&apos;t.
+              </p>
+              <p>
+                <strong className="text-foreground">Belgium can build</strong> &mdash; Estonia did it with 1.3 million people. India did it with 1.4 billion. Belgium, with 11 million people and one of the highest GDP-per-capita in the world, has no excuse not to.
+              </p>
             </div>
           </div>
         </div>
@@ -185,7 +232,7 @@ export default function ManifestoPage() {
             This is the future of government technology.
           </h2>
           <p className="text-lg text-foreground-secondary leading-relaxed">
-            No more tenders. No more subcontracting. No more wasted billions. Just motivated builders with a mandate to fix what&apos;s broken.
+            No more tenders. No more subcontracting. No more wasted billions. Sovereign, open-source, built by Belgians for Belgians.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/support" className="btn-primary">
@@ -193,6 +240,9 @@ export default function ManifestoPage() {
             </Link>
             <Link href="/join" className="btn-secondary">
               Join as Builder
+            </Link>
+            <Link href="/gov-os" className="btn-secondary">
+              Read the GOV OS Plan
             </Link>
           </div>
         </div>

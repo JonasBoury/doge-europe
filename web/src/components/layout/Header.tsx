@@ -22,8 +22,9 @@ export default function Header() {
     { href: '/' as const, label: t('home') },
     { href: '/investigations' as const, label: t('investigations') },
     { href: '/tools' as const, label: t('tools') },
+    { href: '/gov-os' as const, label: t('govOs') },
     { href: '/about' as const, label: t('about') },
-{ href: '/manifesto' as const, label: t('manifesto') },
+    { href: '/manifesto' as const, label: t('manifesto') },
     { href: '/join' as const, label: t('join') },
   ];
 

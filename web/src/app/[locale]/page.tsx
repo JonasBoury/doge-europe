@@ -12,15 +12,15 @@ export default function HomePage() {
               DOGE Belgium
             </p>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-[1.1] tracking-tight">
-              Investigate. Build. Ship.
+              Building GOV OS.
             </h1>
 
             <p className="text-lg md:text-xl text-foreground-secondary leading-relaxed max-w-2xl">
-              A team of young builders and investigators with the moral ambition to fix what&apos;s broken in government — instead of extracting from it.
+              The open-source operating system for Belgian government. Built by a team of young builders with the moral ambition to fix what&apos;s broken &mdash; instead of extracting from it.
             </p>
 
             <p className="text-base text-foreground-tertiary leading-relaxed max-w-2xl">
-              A department that runs like a startup. We take ownership. We don&apos;t outsource to Deloitte, subcontract through 4 layers, and hope for the best. We find the biggest problems, build the solutions, and ship them to millions of citizens.
+              Open source. Decentralised. Sovereign. We take ownership, investigate the biggest failures, build the replacements, and ship them to 11 million citizens.
             </p>
 
             {/* CTA Buttons */}
@@ -36,68 +36,110 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Our Approach - 4 Pillars */}
+      {/* The Approach - 3 Phases */}
       <section className="py-16 md:py-24 px-4 md:px-8 bg-background-secondary">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
-              Our Approach
+              The Roadmap
             </h2>
             <p className="mt-2 text-foreground-secondary">
-              How we turn government failures into working solutions
+              From team to mandate to operating system
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Recruit */}
-            <div className="p-6 rounded-xl bg-background border border-border hover:border-accent/30 transition-colors">
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="p-6 rounded-xl bg-background border border-accent/30 hover:border-accent/50 transition-colors">
               <div className="w-12 h-12 rounded-xl bg-accent-subtle flex items-center justify-center mb-4">
                 <span className="text-2xl font-display font-bold text-accent">1</span>
               </div>
-              <h3 className="text-lg font-semibold text-foreground">
-                Recruit
-              </h3>
-              <p className="mt-2 text-sm text-foreground-secondary leading-relaxed">
-                Find young builders and fixers with moral ambition, not Deloitte consultants.
+              <div className="flex items-center gap-2 mb-2">
+                <h3 className="text-lg font-semibold text-foreground">Build the Team</h3>
+                <span className="badge-active">Now</span>
+              </div>
+              <p className="text-sm text-foreground-secondary leading-relaxed">
+                Recruit builders and investigators. Investigate the biggest government failures. Build prototypes that prove a small team can out-deliver consulting firms.
               </p>
             </div>
 
-            {/* Investigate */}
             <div className="p-6 rounded-xl bg-background border border-border hover:border-accent/30 transition-colors">
               <div className="w-12 h-12 rounded-xl bg-accent-subtle flex items-center justify-center mb-4">
                 <span className="text-2xl font-display font-bold text-accent">2</span>
               </div>
-              <h3 className="text-lg font-semibold text-foreground">
-                Investigate
-              </h3>
-              <p className="mt-2 text-sm text-foreground-secondary leading-relaxed">
-                Deep-dive into the biggest government failures, follow the money.
+              <h3 className="text-lg font-semibold text-foreground mb-2">Get the Mandate</h3>
+              <p className="text-sm text-foreground-secondary leading-relaxed">
+                Build public support. Show what&apos;s possible. Get the political mandate to build government software &mdash; not outsource it.
               </p>
             </div>
 
-            {/* Build */}
             <div className="p-6 rounded-xl bg-background border border-border hover:border-accent/30 transition-colors">
               <div className="w-12 h-12 rounded-xl bg-accent-subtle flex items-center justify-center mb-4">
                 <span className="text-2xl font-display font-bold text-accent">3</span>
               </div>
-              <h3 className="text-lg font-semibold text-foreground">
-                Build
-              </h3>
-              <p className="mt-2 text-sm text-foreground-secondary leading-relaxed">
-                Take ownership, create solutions that work, run like a startup.
+              <h3 className="text-lg font-semibold text-foreground mb-2">Build GOV OS</h3>
+              <p className="text-sm text-foreground-secondary leading-relaxed">
+                The endgame: a sovereign, open-source operating system for all Belgian government. Identity, payments, documents, communication.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-8 text-center">
+            <Link
+              href="/gov-os"
+              className="inline-flex items-center gap-2 text-accent hover:text-accent-hover font-medium transition-colors"
+            >
+              Read the full GOV OS plan
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Core Values */}
+      <section className="py-16 md:py-24 px-4 md:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-12">
+            <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
+              Core Values
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="p-6 rounded-xl bg-background-secondary border border-border">
+              <div className="w-12 h-12 rounded-xl bg-accent-subtle flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Open Source</h3>
+              <p className="text-sm text-foreground-secondary leading-relaxed">
+                Every line of code is public. No vendor lock-in. No black boxes. Citizens pay for it &mdash; citizens own it.
               </p>
             </div>
 
-            {/* Ship */}
-            <div className="p-6 rounded-xl bg-background border border-border hover:border-accent/30 transition-colors">
+            <div className="p-6 rounded-xl bg-background-secondary border border-border">
               <div className="w-12 h-12 rounded-xl bg-accent-subtle flex items-center justify-center mb-4">
-                <span className="text-2xl font-display font-bold text-accent">4</span>
+                <svg className="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                </svg>
               </div>
-              <h3 className="text-lg font-semibold text-foreground">
-                Ship
-              </h3>
-              <p className="mt-2 text-sm text-foreground-secondary leading-relaxed">
-                Deploy to millions of citizens who are already waiting.
+              <h3 className="text-lg font-semibold text-foreground mb-2">Decentralised</h3>
+              <p className="text-sm text-foreground-secondary leading-relaxed">
+                No single point of failure. Small, independent modules. Each agency owns its data. Peer-to-peer exchange.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-xl bg-background-secondary border border-border">
+              <div className="w-12 h-12 rounded-xl bg-accent-subtle flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Sovereign</h3>
+              <p className="text-sm text-foreground-secondary leading-relaxed">
+                Belgian data on European infrastructure. No foreign tech monopoly dependencies. Digital sovereignty is non-negotiable.
               </p>
             </div>
           </div>
@@ -105,7 +147,7 @@ export default function HomePage() {
       </section>
 
       {/* Stats Bento Grid */}
-      <section className="py-16 md:py-24 px-4 md:px-8">
+      <section className="py-16 md:py-24 px-4 md:px-8 bg-background-secondary">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
@@ -116,10 +158,8 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* Bento Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-            {/* Large stat card */}
-            <div className="col-span-2 row-span-2 p-8 bg-background-secondary rounded-2xl border border-border">
+            <div className="col-span-2 row-span-2 p-8 bg-background rounded-2xl border border-border">
               <span className="text-sm font-medium text-foreground-tertiary uppercase tracking-wide">
                 Total Wasted
               </span>
@@ -134,18 +174,17 @@ export default function HomePage() {
               </p>
             </div>
 
-            {/* Small stat cards */}
-            <div className="p-6 bg-background-secondary rounded-xl border border-border">
+            <div className="p-6 bg-background rounded-xl border border-border">
               <span className="text-sm text-foreground-tertiary">Projects Failed</span>
               <p className="mt-2 font-display text-3xl font-bold text-foreground">3</p>
             </div>
 
-            <div className="p-6 bg-background-secondary rounded-xl border border-border">
+            <div className="p-6 bg-background rounded-xl border border-border">
               <span className="text-sm text-foreground-tertiary">Avg. Delivery</span>
               <p className="mt-2 font-display text-3xl font-bold text-chart-negative">6%</p>
             </div>
 
-            <div className="col-span-2 p-6 bg-background-secondary rounded-xl border border-border">
+            <div className="col-span-2 p-6 bg-background rounded-xl border border-border">
               <span className="text-sm text-foreground-tertiary">Active Investigations</span>
               <p className="mt-2 font-display text-3xl font-bold text-status-active">5</p>
               <p className="mt-1 text-sm text-foreground-tertiary">
@@ -154,7 +193,6 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* View investigations link */}
           <div className="mt-8 text-center">
             <Link
               href="/investigations"
@@ -170,7 +208,7 @@ export default function HomePage() {
       </section>
 
       {/* Featured Investigation */}
-      <section className="py-16 md:py-24 px-4 md:px-8 bg-background-secondary">
+      <section className="py-16 md:py-24 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="mb-8">
             <span className="badge-active">Featured Investigation</span>
@@ -192,19 +230,19 @@ export default function HomePage() {
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              <div className="p-6 bg-background rounded-xl border border-border">
+              <div className="p-6 bg-background-secondary rounded-xl border border-border">
                 <span className="text-sm text-foreground-tertiary">Budget Spent</span>
                 <p className="mt-2 font-display text-2xl font-bold text-chart-negative">€16M</p>
               </div>
-              <div className="p-6 bg-background rounded-xl border border-border">
+              <div className="p-6 bg-background-secondary rounded-xl border border-border">
                 <span className="text-sm text-foreground-tertiary">Delivered</span>
                 <p className="mt-2 font-display text-2xl font-bold text-chart-negative">8-10%</p>
               </div>
-              <div className="p-6 bg-background rounded-xl border border-border">
+              <div className="p-6 bg-background-secondary rounded-xl border border-border">
                 <span className="text-sm text-foreground-tertiary">Duration</span>
                 <p className="mt-2 font-display text-2xl font-bold text-foreground">5 Years</p>
               </div>
-              <div className="p-6 bg-background rounded-xl border border-border">
+              <div className="p-6 bg-background-secondary rounded-xl border border-border">
                 <span className="text-sm text-foreground-tertiary">Status</span>
                 <p className="mt-2 font-display text-2xl font-bold text-chart-negative">Halted</p>
               </div>
@@ -214,7 +252,7 @@ export default function HomePage() {
       </section>
 
       {/* Tools Section */}
-      <section className="py-16 md:py-24 px-4 md:px-8">
+      <section className="py-16 md:py-24 px-4 md:px-8 bg-background-secondary">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
@@ -225,8 +263,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* Featured tool - GovChallenge */}
-          <div className="mb-6 p-8 rounded-xl bg-background-secondary border border-accent/30 hover:border-accent/50 transition-colors">
+          <div className="mb-6 p-8 rounded-xl bg-background border border-accent/30 hover:border-accent/50 transition-colors">
             <div className="flex flex-col md:flex-row md:items-center gap-6">
               <div className="w-14 h-14 rounded-xl bg-accent-subtle flex items-center justify-center flex-shrink-0">
                 <svg className="w-7 h-7 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -239,7 +276,7 @@ export default function HomePage() {
                   <span className="badge-active">Launching soon</span>
                 </div>
                 <p className="text-foreground-secondary leading-relaxed">
-                  Challenge-based procurement platform. Governments define problems, teams build working prototypes in 12 weeks, winners get paid for results. No 47-page tenders. No 3-year timelines. Just working software.
+                  Challenge-based procurement platform. Governments define problems, teams build working prototypes in 12 weeks, winners get paid for results. No 47-page tenders. Just working software.
                 </p>
               </div>
               <a
@@ -254,7 +291,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="p-6 rounded-xl bg-background-secondary border border-border hover:border-accent/30 transition-colors">
+            <div className="p-6 rounded-xl bg-background border border-border hover:border-accent/30 transition-colors">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-xl bg-accent-subtle flex items-center justify-center flex-shrink-0">
                   <svg className="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -276,7 +313,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="p-6 rounded-xl bg-background-secondary border border-border">
+            <div className="p-6 rounded-xl bg-background border border-border">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-xl bg-background-tertiary flex items-center justify-center flex-shrink-0">
                   <svg className="w-6 h-6 text-foreground-tertiary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -311,7 +348,7 @@ export default function HomePage() {
       </section>
 
       {/* Stay Updated */}
-      <section className="py-16 md:py-24 px-4 md:px-8 bg-background-secondary">
+      <section className="py-16 md:py-24 px-4 md:px-8">
         <div className="max-w-3xl mx-auto text-center space-y-6">
           <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
             Stay Updated
@@ -336,7 +373,7 @@ export default function HomePage() {
             Option A: Join a consulting firm. Bill hours. Make slides. Watch your &ldquo;deliverables&rdquo; collect dust on a SharePoint nobody opens.
           </p>
           <p className="mt-3 text-foreground-secondary leading-relaxed font-medium">
-            Option B: Join DOGE. Investigate a €75M failure. Build the replacement. Ship it to 11 million people.
+            Option B: Join DOGE. Investigate a €75M failure. Build GOV OS. Ship it to 11 million people.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link href="/join" className="btn-primary">
