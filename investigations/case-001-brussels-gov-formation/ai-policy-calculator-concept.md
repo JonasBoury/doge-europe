@@ -228,7 +228,7 @@ Public can verify political claims:
    - Identifies package deal opportunities
    - Predicts likely sticking points
 
-## Next Steps for DOGE Europe
+## Next Steps for DOGE Belgium
 
 ### Phase 1: Publish Calculator (Immediate)
 - Deploy as part of Coalition Builder web app
@@ -266,7 +266,7 @@ The Brussels crisis persists because of **lack of political will**, not lack of 
 
 ---
 
-**DOGE Europe Recommendation:**
+**DOGE Belgium Recommendation:**
 
 **Publish this calculator immediately.** Let citizens see for themselves that the math works, the policies align, and the obstruction is deliberate.
 

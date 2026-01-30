@@ -646,4 +646,4 @@ persona-mvp/
 
 | Version | Date | Author | Changes |
 |---------|------|--------|---------|
-| 0.1 | 2026-01-28 | DOGE Europe | Initial proposal |
+| 0.1 | 2026-01-28 | DOGE Belgium | Initial proposal |

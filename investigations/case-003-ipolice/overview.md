@@ -7,13 +7,13 @@
 - **Date Opened:** 2026-01-28
 - **Last Updated:** 2026-01-28
 - **Priority:** High
-- **Lead Investigator:** DOGE Europe Research Team
+- **Lead Investigator:** DOGE Belgium Research Team
 
 ## Executive Summary
 
 The iPolice program is Belgium's flagship IT modernization project for the integrated police force (federal and local police). Launched to replace the aging ISLP (Integrated System for Local Police) infrastructure, iPolice aims to provide a modern, unified information system for all Belgian police zones. The project has been plagued by massive cost overruns, repeated delays, and questions about procurement integrity. Initial budget estimates have ballooned significantly, while delivery timelines have been pushed back multiple times.
 
-This DOGE Europe investigation examines the **governance, procurement, spending, and delivery failures** of the iPolice program. The investigation will assess whether taxpayer money was spent effectively, whether procurement rules were respected, and what accountability mechanisms exist for one of Belgium's largest government IT projects.
+This DOGE Belgium investigation examines the **governance, procurement, spending, and delivery failures** of the iPolice program. The investigation will assess whether taxpayer money was spent effectively, whether procurement rules were respected, and what accountability mechanisms exist for one of Belgium's largest government IT projects.
 
 ## Key Questions
 

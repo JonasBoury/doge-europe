@@ -79,7 +79,7 @@ export default function DonatePage() {
             Support Our Work
           </p>
           <h1 className="mt-3 font-display text-4xl md:text-5xl font-bold text-foreground tracking-tight">
-            Donate to DOGE Europe
+            Donate to DOGE Belgium
           </h1>
           <p className="mt-4 text-lg text-foreground-secondary leading-relaxed">
             Your donation helps us continue independent investigations into government

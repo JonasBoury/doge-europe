@@ -7,13 +7,13 @@
 - **Date Opened:** 2026-01-02
 - **Last Updated:** 2026-01-02
 - **Priority:** High
-- **Lead Investigator:** DOGE Europe Research Team
+- **Lead Investigator:** DOGE Belgium Research Team
 
 ## Executive Summary
 
 As of January 2026, the Brussels-Capital Region has been without a fully empowered government for over 570 days following the June 2024 regional elections. This unprecedented deadlock surpasses Belgium's previous record and creates a severe institutional void that freezes budgets, delays critical investments, and worsens the region's financial crisis characterized by high debt and deficits.
 
-This DOGE Europe investigation focuses on **systemic accountability and transparency failures** that enabled and perpetuate this prolonged crisis. The investigation will document institutional gaps, analyze the breakdown of accountability mechanisms, and develop recommendations for structural reforms to prevent future deadlocks.
+This DOGE Belgium investigation focuses on **systemic accountability and transparency failures** that enabled and perpetuate this prolonged crisis. The investigation will document institutional gaps, analyze the breakdown of accountability mechanisms, and develop recommendations for structural reforms to prevent future deadlocks.
 
 ## Key Questions
 

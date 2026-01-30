@@ -1,6 +1,55 @@
+'use client';
+
+import { useState } from 'react';
 import { Link } from '@/i18n/routing';
+import { useMutation } from 'convex/react';
+import { api } from '@convex/_generated/api';
 
 export default function JoinPage() {
+  const [form, setForm] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    coolestBuild: '',
+    socialProfile: '',
+    websiteUrl: '',
+    monthlyAiSpending: '',
+    brokenGovThing: '',
+  });
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
+
+  const submitApplication = useMutation(api.applicants.submit);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setError(null);
+    setLoading(true);
+
+    try {
+      await submitApplication({
+        firstName: form.firstName,
+        lastName: form.lastName,
+        email: form.email,
+        coolestBuild: form.coolestBuild,
+        socialProfile: form.socialProfile || undefined,
+        websiteUrl: form.websiteUrl || undefined,
+        monthlyAiSpending: form.monthlyAiSpending || undefined,
+        brokenGovThing: form.brokenGovThing,
+      });
+      setSubmitted(true);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Something went wrong');
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className="min-h-screen">
       {/* Hero */}
@@ -34,7 +83,7 @@ export default function JoinPage() {
               What is DOGE?
             </h2>
             <p className="text-foreground-secondary leading-relaxed">
-              DOGE is a team of young builders and investigators dedicated to fixing the biggest failures in European government — from the inside out.
+              DOGE is a team of young builders and investigators dedicated to fixing the biggest failures in Belgian government — from the inside out.
             </p>
             <div className="space-y-2 text-foreground-secondary">
               <p>We don&apos;t write reports. We don&apos;t run workshops. We don&apos;t bill hours.</p>
@@ -255,10 +304,10 @@ export default function JoinPage() {
 
           <div className="grid md:grid-cols-3 gap-6">
             <div className="p-6 rounded-xl bg-background-secondary border border-border">
-              <span className="badge-error">€75.8M wasted</span>
+              <span className="badge-error">&euro;75.8M wasted</span>
               <h3 className="mt-4 text-lg font-semibold text-foreground">iPolice</h3>
               <p className="mt-2 text-sm text-foreground-secondary">
-                National police IT system. €75.8M spent, system barely works.
+                National police IT system. &euro;75.8M spent, system barely works.
               </p>
               <Link href="/investigations" className="mt-4 inline-flex items-center gap-1 text-sm text-accent hover:text-accent-hover">
                 Read more
@@ -272,7 +321,7 @@ export default function JoinPage() {
               <span className="badge-error">8% delivered</span>
               <h3 className="mt-4 text-lg font-semibold text-foreground">Persona</h3>
               <p className="mt-2 text-sm text-foreground-secondary">
-                Education administration. €16M spent, 8% of promised functionality delivered.
+                Education administration. &euro;16M spent, 8% of promised functionality delivered.
               </p>
               <Link href="/investigations/case-004-persona-onderwijsadministratie" className="mt-4 inline-flex items-center gap-1 text-sm text-accent hover:text-accent-hover">
                 Read more
@@ -299,49 +348,182 @@ export default function JoinPage() {
         </div>
       </section>
 
-      {/* The Pitch + Apply CTA */}
-      <section className="py-16 md:py-24 px-4 md:px-8 bg-accent-subtle">
-        <div className="max-w-3xl mx-auto text-center space-y-8">
-          <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
-            The pitch
-          </h2>
-          <div className="space-y-4">
-            <p className="text-lg text-foreground-secondary leading-relaxed">
-              You&apos;re 25. You can build. You want your work to matter.
-            </p>
-            <p className="text-foreground-tertiary leading-relaxed">
-              Option A: Join a consulting firm. Bill hours. Make slides. Watch your &ldquo;deliverables&rdquo; collect dust on a SharePoint nobody opens.
-            </p>
-            <p className="text-foreground-secondary leading-relaxed font-medium">
-              Option B: Join DOGE. Investigate a €75M failure. Build the replacement. Ship it to 11 million people. Put it on your GitHub.
-            </p>
-            <p className="text-lg text-foreground font-semibold pt-4">
-              We know which one we&apos;d pick.
+      {/* Application Form */}
+      <section id="apply" className="py-16 md:py-24 px-4 md:px-8 bg-accent-subtle">
+        <div className="max-w-2xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
+              Apply to join DOGE
+            </h2>
+            <p className="mt-3 text-foreground-secondary">
+              No CV. No cover letter. No &ldquo;tell us about a time you demonstrated leadership.&rdquo;
             </p>
           </div>
 
-          <div className="border-t border-border pt-8">
-            <h3 className="text-xl font-semibold text-foreground mb-4">Apply</h3>
-            <div className="text-left max-w-md mx-auto space-y-3 text-foreground-secondary">
-              <p>Tell us:</p>
-              <ol className="list-decimal list-inside space-y-2 text-sm">
-                <li>What&apos;s the most broken thing in government you&apos;ve seen?</li>
-                <li>How would you fix it?</li>
-                <li>Link to something you&apos;ve built.</li>
-              </ol>
-              <p className="text-foreground-tertiary text-sm pt-2">
-                That&apos;s it. No CV. No cover letter. No &ldquo;tell us about a time you demonstrated leadership.&rdquo;
+          {submitted ? (
+            <div className="p-8 bg-background rounded-2xl border border-border text-center space-y-4">
+              <div className="w-16 h-16 mx-auto rounded-full bg-status-success/10 flex items-center justify-center">
+                <svg className="w-8 h-8 text-status-success" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-foreground">Application received</h3>
+              <p className="text-foreground-secondary">
+                We&apos;ll review your application and get back to you soon. In the meantime, check out our active investigations.
               </p>
+              <Link href="/investigations" className="btn-primary inline-flex">
+                View Investigations
+              </Link>
             </div>
-            <div className="mt-8">
-              <a
-                href="mailto:join@dogeeurope.eu"
-                className="btn-primary"
+          ) : (
+            <form onSubmit={handleSubmit} className="p-8 bg-background rounded-2xl border border-border space-y-6">
+              {/* Name row */}
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label htmlFor="firstName" className="block text-sm font-medium text-foreground-secondary mb-1.5">
+                    First name *
+                  </label>
+                  <input
+                    id="firstName"
+                    name="firstName"
+                    type="text"
+                    required
+                    value={form.firstName}
+                    onChange={handleChange}
+                    className="w-full px-4 py-2.5 rounded-lg bg-background-secondary border border-border text-foreground placeholder-foreground-tertiary focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="lastName" className="block text-sm font-medium text-foreground-secondary mb-1.5">
+                    Last name *
+                  </label>
+                  <input
+                    id="lastName"
+                    name="lastName"
+                    type="text"
+                    required
+                    value={form.lastName}
+                    onChange={handleChange}
+                    className="w-full px-4 py-2.5 rounded-lg bg-background-secondary border border-border text-foreground placeholder-foreground-tertiary focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent"
+                  />
+                </div>
+              </div>
+
+              {/* Email */}
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-foreground-secondary mb-1.5">
+                  Email *
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  value={form.email}
+                  onChange={handleChange}
+                  className="w-full px-4 py-2.5 rounded-lg bg-background-secondary border border-border text-foreground placeholder-foreground-tertiary focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent"
+                />
+              </div>
+
+              {/* Coolest build */}
+              <div>
+                <label htmlFor="coolestBuild" className="block text-sm font-medium text-foreground-secondary mb-1.5">
+                  What&apos;s the coolest thing you&apos;ve built? *
+                </label>
+                <textarea
+                  id="coolestBuild"
+                  name="coolestBuild"
+                  required
+                  rows={3}
+                  value={form.coolestBuild}
+                  onChange={handleChange}
+                  placeholder="A link, a description, a story — whatever shows your work best"
+                  className="w-full px-4 py-2.5 rounded-lg bg-background-secondary border border-border text-foreground placeholder-foreground-tertiary focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent resize-none"
+                />
+              </div>
+
+              {/* Social profile */}
+              <div>
+                <label htmlFor="socialProfile" className="block text-sm font-medium text-foreground-secondary mb-1.5">
+                  LinkedIn or other social profile
+                </label>
+                <input
+                  id="socialProfile"
+                  name="socialProfile"
+                  type="url"
+                  value={form.socialProfile}
+                  onChange={handleChange}
+                  placeholder="https://linkedin.com/in/..."
+                  className="w-full px-4 py-2.5 rounded-lg bg-background-secondary border border-border text-foreground placeholder-foreground-tertiary focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent"
+                />
+              </div>
+
+              {/* Website */}
+              <div>
+                <label htmlFor="websiteUrl" className="block text-sm font-medium text-foreground-secondary mb-1.5">
+                  Website
+                </label>
+                <input
+                  id="websiteUrl"
+                  name="websiteUrl"
+                  type="url"
+                  value={form.websiteUrl}
+                  onChange={handleChange}
+                  placeholder="https://yoursite.com"
+                  className="w-full px-4 py-2.5 rounded-lg bg-background-secondary border border-border text-foreground placeholder-foreground-tertiary focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent"
+                />
+              </div>
+
+              {/* AI spending */}
+              <div>
+                <label htmlFor="monthlyAiSpending" className="block text-sm font-medium text-foreground-secondary mb-1.5">
+                  What is your monthly coding spending on AI?
+                </label>
+                <input
+                  id="monthlyAiSpending"
+                  name="monthlyAiSpending"
+                  type="text"
+                  value={form.monthlyAiSpending}
+                  onChange={handleChange}
+                  placeholder="e.g. €20/month on Cursor, €50/month on Claude Pro"
+                  className="w-full px-4 py-2.5 rounded-lg bg-background-secondary border border-border text-foreground placeholder-foreground-tertiary focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent"
+                />
+              </div>
+
+              {/* Broken gov thing */}
+              <div>
+                <label htmlFor="brokenGovThing" className="block text-sm font-medium text-foreground-secondary mb-1.5">
+                  What is the most broken thing in government you&apos;ve seen? *
+                </label>
+                <textarea
+                  id="brokenGovThing"
+                  name="brokenGovThing"
+                  required
+                  rows={3}
+                  value={form.brokenGovThing}
+                  onChange={handleChange}
+                  placeholder="The more specific, the better"
+                  className="w-full px-4 py-2.5 rounded-lg bg-background-secondary border border-border text-foreground placeholder-foreground-tertiary focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent resize-none"
+                />
+              </div>
+
+              {/* Error */}
+              {error && (
+                <div className="p-4 bg-status-error/10 border border-status-error/20 rounded-lg">
+                  <p className="text-status-error text-sm">{error}</p>
+                </div>
+              )}
+
+              {/* Submit */}
+              <button
+                type="submit"
+                disabled={loading}
+                className="w-full btn-primary py-3 text-base justify-center disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send it to join@dogeeurope.eu
-              </a>
-            </div>
-          </div>
+                {loading ? 'Submitting...' : 'Submit Application'}
+              </button>
+            </form>
+          )}
         </div>
       </section>
     </div>

@@ -9,7 +9,7 @@ import ThemeToggle from '@/components/ui/ThemeToggle';
 export default function Header() {
   const t = useTranslations('nav');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [brandName, setBrandName] = useState('Europe');
+  const [brandName, setBrandName] = useState('Belgium');
 
   useEffect(() => {
     const host = window.location.hostname;
@@ -23,8 +23,7 @@ export default function Header() {
     { href: '/investigations' as const, label: t('investigations') },
     { href: '/tools' as const, label: t('tools') },
     { href: '/about' as const, label: t('about') },
-    { href: '/reform' as const, label: t('reform') },
-    { href: '/manifesto' as const, label: t('manifesto') },
+{ href: '/manifesto' as const, label: t('manifesto') },
     { href: '/join' as const, label: t('join') },
   ];
 

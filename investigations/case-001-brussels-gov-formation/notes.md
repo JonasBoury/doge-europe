@@ -461,7 +461,7 @@ This document contains research findings, working hypotheses, and to-do items fo
 - Acknowledge uncertainty where evidence incomplete
 
 ### Ethical Guidelines
-- Follow DOGE Europe ETHICS.md principles
+- Follow DOGE Belgium ETHICS.md principles
 - Protect source confidentiality where requested
 - Respect privacy (GDPR compliance)
 - Minimize harm while pursuing truth
@@ -864,7 +864,7 @@ This document contains research findings, working hypotheses, and to-do items fo
 
 ---
 
-### Integration with DOGE Europe Investigation
+### Integration with DOGE Belgium Investigation
 
 **This software tool analysis supports the investigation's core mission:**
 
@@ -875,7 +875,7 @@ This document contains research findings, working hypotheses, and to-do items fo
 5. **Public Engagement:** Channels citizen frustration into constructive participation
 
 **Recommendation for Investigation Report:**
-Include this software tool concept as a **concrete reform proposal** in the final deliverable, demonstrating that DOGE Europe provides solutions, not just criticism.
+Include this software tool concept as a **concrete reform proposal** in the final deliverable, demonstrating that DOGE Belgium provides solutions, not just criticism.
 
 ---
 

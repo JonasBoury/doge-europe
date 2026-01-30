@@ -7,13 +7,13 @@
 - **Date Opened:** 2026-01-28
 - **Last Updated:** 2026-01-28
 - **Priority:** High
-- **Lead Investigator:** DOGE Europe Research Team
+- **Lead Investigator:** DOGE Belgium Research Team
 
 ## Executive Summary
 
 Belgium's justice system has long been criticized for its outdated IT infrastructure and paper-based processes. Multiple digitalization initiatives have been launched over the past two decades, consuming significant public funds while delivering limited results. Courts still rely heavily on paper files, fax machines remain in use, and interoperability between judicial databases is minimal. The lack of a coherent digital strategy has led to fragmented systems, repeated failed projects, and a justice system that lags far behind European peers.
 
-This DOGE Europe investigation examines the **systematic failures in the digitalization of Belgium's justice system**, analyzing the governance, procurement, spending, and outcomes of successive IT modernization programs. The investigation will assess whether public funds were spent effectively, identify accountability gaps, and evaluate the current state of digital justice infrastructure.
+This DOGE Belgium investigation examines the **systematic failures in the digitalization of Belgium's justice system**, analyzing the governance, procurement, spending, and outcomes of successive IT modernization programs. The investigation will assess whether public funds were spent effectively, identify accountability gaps, and evaluate the current state of digital justice infrastructure.
 
 ## Key Questions
 

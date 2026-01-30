@@ -3,8 +3,7 @@
     "home": "Home",
     "investigations": "Investigations",
     "tools": "Tools",
-    "about": "About DOGE Europe",
-    "reform": "Reform",
+    "about": "About DOGE Belgium",
     "join": "Join the Team",
     "manifesto": "Manifesto",
     "support": "Support",
@@ -30,7 +29,7 @@
   },
   "home": {
     "hero": "Investigating systemic failures and demanding accountability.",
-    "subtitle": "European Department of Government Efficiency",
+    "subtitle": "Belgian Department of Government Efficiency",
     "cta": "View Active Investigations",
     "daysWithoutGov": "Days Without Government"
   }

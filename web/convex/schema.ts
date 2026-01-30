@@ -12,4 +12,15 @@ export default defineSchema({
     name: v.optional(v.string()),
     createdAt: v.number(),
   }).index("by_email", ["email"]),
+  applicants: defineTable({
+    firstName: v.string(),
+    lastName: v.string(),
+    email: v.string(),
+    coolestBuild: v.string(),
+    socialProfile: v.optional(v.string()),
+    websiteUrl: v.optional(v.string()),
+    monthlyAiSpending: v.optional(v.string()),
+    brokenGovThing: v.string(),
+    createdAt: v.number(),
+  }).index("by_email", ["email"]),
 });

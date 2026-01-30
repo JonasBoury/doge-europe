@@ -121,7 +121,7 @@ export default function CoalitionBuilderPage() {
             <div>
               <h3 className="font-semibold text-foreground mb-2">About This Tool</h3>
               <p className="text-sm text-foreground-secondary">
-                Part of DOGE Europe&apos;s investigation into the Brussels government formation crisis.
+                Part of DOGE Belgium&apos;s investigation into the Brussels government formation crisis.
                 Uses real election data and documented party positions.
               </p>
             </div>

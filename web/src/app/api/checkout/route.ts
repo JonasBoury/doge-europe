@@ -34,7 +34,7 @@ export async function POST(request: NextRequest) {
             price_data: {
               currency: 'eur',
               product_data: {
-                name: 'DOGE Europe Monthly Support',
+                name: 'DOGE Belgium Monthly Support',
                 description: 'Monthly donation to support independent government accountability research',
               },
               unit_amount: amount * 100, // Convert to cents
@@ -60,7 +60,7 @@ export async function POST(request: NextRequest) {
             price_data: {
               currency: 'eur',
               product_data: {
-                name: 'DOGE Europe Donation',
+                name: 'DOGE Belgium Donation',
                 description: 'One-time donation to support independent government accountability research',
               },
               unit_amount: amount * 100, // Convert to cents

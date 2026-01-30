@@ -8,10 +8,10 @@ export default function Footer() {
           {/* About */}
           <div className="space-y-4">
             <h3 className="text-sm font-semibold text-foreground">
-              DOGE Europe
+              DOGE Belgium
             </h3>
             <p className="text-sm text-foreground-secondary leading-relaxed">
-              European Department of Government Efficiency - Investigating systemic failures and demanding accountability.
+              Belgian Department of Government Efficiency - Investigating systemic failures and demanding accountability.
             </p>
           </div>
 
@@ -61,7 +61,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="border-t border-border mt-12 pt-8 text-center">
           <p className="text-sm text-foreground-tertiary">
-            © {new Date().getFullYear()} DOGE Europe. Built for transparency and accountability.
+            © {new Date().getFullYear()} DOGE Belgium. Built for transparency and accountability.
           </p>
         </div>
       </div>

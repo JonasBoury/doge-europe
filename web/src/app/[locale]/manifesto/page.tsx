@@ -29,7 +29,7 @@ export default function ManifestoPage() {
             </h2>
             <div className="space-y-4 text-foreground-secondary leading-relaxed">
               <p>
-                European governments spend billions on technology every year. Most of it fails. Not because the problems are hard, but because the system is designed to fail.
+                Belgian governments spend billions on technology every year. Most of it fails. Not because the problems are hard, but because the system is designed to fail.
               </p>
               <p>
                 A ministry needs software. They write a 47-page tender. A consulting firm wins the contract. They subcontract to another firm. Who subcontracts to another. Four layers deep, nobody owns the outcome. Three years later: over budget, under-delivered, and the citizens it was meant to serve are still using paper forms.

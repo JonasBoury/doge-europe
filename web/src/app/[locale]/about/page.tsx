@@ -176,7 +176,7 @@ export default function AboutPage() {
             Why This Matters
           </h2>
           <p className="text-foreground-secondary text-lg leading-relaxed mb-4">
-            European governments spend billions on IT projects that never deliver. The procurement
+            Belgian governments spend billions on IT projects that never deliver. The procurement
             process is broken — it rewards incumbents, punishes innovation, and takes years before
             a single line of code is written.
           </p>

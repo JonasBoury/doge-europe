@@ -7,7 +7,7 @@
 - **Date Opened:** 2026-01-28
 - **Last Updated:** 2026-01-28
 - **Priority:** High
-- **Lead Investigator:** DOGE Europe Research Team
+- **Lead Investigator:** DOGE Belgium Research Team
 
 ## Executive Summary
 

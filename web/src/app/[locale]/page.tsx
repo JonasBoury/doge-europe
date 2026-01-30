@@ -9,7 +9,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="max-w-4xl space-y-6">
             <p className="text-sm font-medium text-accent uppercase tracking-wide">
-              DOGE Europe
+              DOGE Belgium
             </p>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-[1.1] tracking-tight">
               Investigate. Build. Ship.

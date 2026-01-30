@@ -82,7 +82,7 @@ export default function InvestigationsPage() {
               More Investigations Coming Soon
             </h2>
             <p className="text-sm text-foreground/50">
-              DOGE Europe is expanding its investigative scope across European institutions.
+              DOGE Belgium is expanding its investigative scope across Belgian institutions.
             </p>
           </div>
         </div>

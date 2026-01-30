@@ -368,6 +368,59 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* Reward Structure */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-sm font-medium text-blue-600 uppercase tracking-wide">
+              Reward Structure
+            </p>
+            <h2 className="mt-2 text-3xl font-bold text-gray-900">
+              Example: &euro;500K Project
+            </h2>
+            <p className="mt-4 text-gray-600">
+              How the reward structure works for a typical government software project.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="p-6 bg-gray-50 rounded-xl">
+              <p className="text-sm text-gray-500 uppercase tracking-wide">Top 10 MVPs</p>
+              <p className="text-3xl font-bold text-blue-600 mt-1">&euro;10K each</p>
+              <p className="text-sm text-gray-600 mt-2">Compensate serious builders for their time</p>
+            </div>
+            <div className="p-6 bg-gray-50 rounded-xl">
+              <p className="text-sm text-gray-500 uppercase tracking-wide">2nd-3rd Place</p>
+              <p className="text-3xl font-bold text-blue-600 mt-1">&euro;25K each</p>
+              <p className="text-sm text-gray-600 mt-2">Recognize excellent work</p>
+            </div>
+            <div className="p-6 bg-gray-50 rounded-xl">
+              <p className="text-sm text-gray-500 uppercase tracking-wide">Winner</p>
+              <p className="text-3xl font-bold text-blue-600 mt-1">&euro;50K + contract</p>
+              <p className="text-sm text-gray-600 mt-2">Continue to production</p>
+            </div>
+            <div className="p-6 bg-gray-50 rounded-xl">
+              <p className="text-sm text-gray-500 uppercase tracking-wide">Maintenance</p>
+              <p className="text-3xl font-bold text-blue-600 mt-1">&euro;200K/year</p>
+              <p className="text-sm text-gray-600 mt-2">Ongoing support and improvements</p>
+            </div>
+          </div>
+          <div className="p-6 bg-blue-50 border border-blue-200 rounded-xl">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <div>
+                <p className="text-sm text-gray-500">Challenge model total</p>
+                <p className="text-2xl font-bold text-blue-600">~&euro;350K</p>
+              </div>
+              <div className="text-gray-400">vs.</div>
+              <div>
+                <p className="text-sm text-gray-500">Current system for same scope</p>
+                <p className="text-2xl font-bold text-red-600">&euro;2-5M+</p>
+                <p className="text-sm text-gray-600">(and often fails anyway)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Who Is This For */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
@@ -525,10 +578,10 @@ export default function LandingPage() {
               <span>
                 A{" "}
                 <a
-                  href="https://dogeeurope.eu"
+                  href="https://dogebelgium.be"
                   className="text-blue-400 hover:text-blue-300 transition-colors"
                 >
-                  DOGE Europe
+                  DOGE Belgium
                 </a>{" "}
                 project
               </span>

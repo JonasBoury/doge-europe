@@ -1,6 +1,6 @@
 # Investigation Opportunities: Belgium & EU Governance
 
-This document tracks potential areas of investigation for DOGE Europe, focusing on government waste, fraud, corruption, and accountability failures in Belgium and EU institutions.
+This document tracks potential areas of investigation for DOGE Belgium, focusing on government waste, fraud, corruption, and accountability failures in Belgium and EU institutions.
 
 **Last Updated:** 2026-01-02
 **Status:** Opportunity Backlog

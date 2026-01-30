@@ -44,7 +44,7 @@ export default function DonateSuccessPage() {
           </p>
           <div className="flex justify-center gap-4">
             <a
-              href="https://twitter.com/intent/tweet?text=I%20just%20supported%20DOGE%20Europe%20in%20their%20mission%20to%20investigate%20government%20inefficiency.%20Join%20me!&url=https://doge-europe.org"
+              href="https://twitter.com/intent/tweet?text=I%20just%20supported%20DOGE%20Belgium%20in%20their%20mission%20to%20investigate%20government%20inefficiency.%20Join%20me!&url=https://dogebelgium.be"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-lg bg-background-secondary hover:bg-background-tertiary transition-colors"
@@ -54,7 +54,7 @@ export default function DonateSuccessPage() {
               </svg>
             </a>
             <a
-              href="https://www.linkedin.com/sharing/share-offsite/?url=https://doge-europe.org"
+              href="https://www.linkedin.com/sharing/share-offsite/?url=https://dogebelgium.be"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-lg bg-background-secondary hover:bg-background-tertiary transition-colors"

@@ -3,8 +3,7 @@
     "home": "Home",
     "investigations": "Onderzoeken",
     "tools": "Tools",
-    "about": "Over DOGE Europa",
-    "reform": "Hervorming",
+    "about": "Over DOGE Belgium",
     "join": "Word lid",
     "manifesto": "Manifest",
     "support": "Steun",
@@ -30,7 +29,7 @@
   },
   "home": {
     "hero": "Onderzoek naar systemische tekortkomingen en verantwoording eisen.",
-    "subtitle": "Europees Departement voor Overheidsefficiëntie",
+    "subtitle": "Belgisch Departement voor Overheidsefficiëntie",
     "cta": "Bekijk Actieve Onderzoeken",
     "daysWithoutGov": "Dagen Zonder Regering"
   }

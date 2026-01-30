@@ -3,8 +3,7 @@
     "home": "Accueil",
     "investigations": "Enquêtes",
     "tools": "Outils",
-    "about": "À propos de DOGE Europe",
-    "reform": "Réforme",
+    "about": "À propos de DOGE Belgium",
     "join": "Rejoindre l'équipe",
     "manifesto": "Manifeste",
     "support": "Soutenir",
@@ -30,7 +29,7 @@
   },
   "home": {
     "hero": "Enquêter sur les défaillances systémiques et exiger la responsabilité.",
-    "subtitle": "Département Européen de l'Efficacité Gouvernementale",
+    "subtitle": "Département Belge de l'Efficacité Gouvernementale",
     "cta": "Voir les Enquêtes Actives",
     "daysWithoutGov": "Jours Sans Gouvernement"
   }
